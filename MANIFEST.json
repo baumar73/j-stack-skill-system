@@ -1,0 +1,210 @@
+{
+  "name": "j-stack-skill-system",
+  "display_name": "J-Stack",
+  "generated_at": "2026-05-28T10:30:07+00:00",
+  "status": "publish-ready-candidate-draft",
+  "inspiration": "Garry Tan / GStack-style operational skills; no affiliation or endorsement implied.",
+  "gbrain": "Designed to use GBrain as newsroom memory, source graph, claim ledger, timeline, and publication record.",
+  "skills": [
+    {
+      "name": "jstack-command-center",
+      "family": "editorial-command",
+      "score": 97,
+      "path": "skills/jstack-command-center/SKILL.md",
+      "description": "Use when starting, coordinating, or resuming a J-Stack journalism workflow. Routes the topic through editorial mission, evidence, drafting, red-team, legal/ethics, distribution, and post-publication follow-up."
+    },
+    {
+      "name": "jstack-office-hours",
+      "family": "editorial-command",
+      "score": 96,
+      "path": "skills/jstack-office-hours/SKILL.md",
+      "description": "Use when testing whether a journalism idea, public thesis, investigation lead, or commentary concept is worth pursuing before spending research or drafting effort."
+    },
+    {
+      "name": "jstack-editorial-line",
+      "family": "editorial-command",
+      "score": 96,
+      "path": "skills/jstack-editorial-line/SKILL.md",
+      "description": "Use when an author, newsroom, or project has a public voice or worldview that should guide framing without changing evidence grades or factual findings."
+    },
+    {
+      "name": "jstack-assignment-desk",
+      "family": "editorial-command",
+      "score": 95,
+      "path": "skills/jstack-assignment-desk/SKILL.md",
+      "description": "Use when breaking a journalism project into newsroom assignments, beats, deadlines, research tasks, review stages, and deliverables for humans or agents."
+    },
+    {
+      "name": "jstack-source-map",
+      "family": "research",
+      "score": 97,
+      "path": "skills/jstack-source-map/SKILL.md",
+      "description": "Use when building a complete source universe for a story: primary sources, secondary sources, adversarial sources, expert sources, missing sources, and archive status."
+    },
+    {
+      "name": "jstack-primary-source-research",
+      "family": "research",
+      "score": 95,
+      "path": "skills/jstack-primary-source-research/SKILL.md",
+      "description": "Use when locating and interpreting primary public sources such as statutes, court records, official registers, corporate filings, sanctions lists, press releases, datasets, or original documents."
+    },
+    {
+      "name": "jstack-osint-research",
+      "family": "research",
+      "score": 95,
+      "path": "skills/jstack-osint-research/SKILL.md",
+      "description": "Use when conducting lawful open-source research across public websites, social profiles, domains, corporate pages, media archives, map traces, public videos, and metadata visible to ordinary users."
+    },
+    {
+      "name": "jstack-data-journalism",
+      "family": "research",
+      "score": 94,
+      "path": "skills/jstack-data-journalism/SKILL.md",
+      "description": "Use when a story relies on datasets, tables, statistics, scraping outputs, budgets, filings, measurements, or repeatable quantitative analysis."
+    },
+    {
+      "name": "jstack-interview-prep",
+      "family": "research",
+      "score": 95,
+      "path": "skills/jstack-interview-prep/SKILL.md",
+      "description": "Use when preparing interviews, requests for comment, expert calls, hostile-subject questions, source briefings, or right-of-reply outreach drafts."
+    },
+    {
+      "name": "jstack-document-review",
+      "family": "research",
+      "score": 95,
+      "path": "skills/jstack-document-review/SKILL.md",
+      "description": "Use when extracting facts, parties, dates, claims, contradictions, and evidence from documents, PDFs, filings, contracts, letters, reports, screenshots, transcripts, or archives."
+    },
+    {
+      "name": "jstack-investigate",
+      "family": "research",
+      "score": 97,
+      "path": "skills/jstack-investigate/SKILL.md",
+      "description": "Use when testing a factual hypothesis, suspicion, allegation, or investigative lead before drafting. Splits claims, identifies evidence paths, and reports confidence honestly."
+    },
+    {
+      "name": "jstack-claim-ledger",
+      "family": "facts-claims",
+      "score": 98,
+      "path": "skills/jstack-claim-ledger/SKILL.md",
+      "description": "Use when converting every publishable assertion into a controlled claim with evidence grade, counterevidence, safe wording, legal risk, and publication color."
+    },
+    {
+      "name": "jstack-evidence-ledger",
+      "family": "facts-claims",
+      "score": 96,
+      "path": "skills/jstack-evidence-ledger/SKILL.md",
+      "description": "Use when building a litigation-grade evidence record for facts, documents, quotes, datasets, interviews, screenshots, and public records that support or contradict claims."
+    },
+    {
+      "name": "jstack-entity-graph",
+      "family": "facts-claims",
+      "score": 96,
+      "path": "skills/jstack-entity-graph/SKILL.md",
+      "description": "Use when mapping people, organizations, publications, domains, funders, locations, aliases, relationships, and confidence levels in a story or investigation."
+    },
+    {
+      "name": "jstack-timeline",
+      "family": "facts-claims",
+      "score": 96,
+      "path": "skills/jstack-timeline/SKILL.md",
+      "description": "Use when reconstructing dated events, statements, filings, publications, decisions, denials, corrections, and consequences so a story does not imply false sequence or causality."
+    },
+    {
+      "name": "jstack-countercase",
+      "family": "facts-claims",
+      "score": 97,
+      "path": "skills/jstack-countercase/SKILL.md",
+      "description": "Use when building the best opposing case against a story, thesis, allegation, or draft before publication, including innocent explanations and subject-side arguments."
+    },
+    {
+      "name": "jstack-legal-risk",
+      "family": "safety",
+      "score": 96,
+      "path": "skills/jstack-legal-risk/SKILL.md",
+      "description": "Use for a pre-publication legal-risk screen of journalism or public commentary, including defamation/libel, German Verdachtsberichterstattung, privacy, copyright, data protection, and active litigation risks."
+    },
+    {
+      "name": "jstack-ethics-check",
+      "family": "safety",
+      "score": 95,
+      "path": "skills/jstack-ethics-check/SKILL.md",
+      "description": "Use when reviewing fairness, public interest, harm, vulnerable people, source protection, conflicts, framing, privacy, and correction duties before publication."
+    },
+    {
+      "name": "jstack-draft",
+      "family": "writing",
+      "score": 96,
+      "path": "skills/jstack-draft/SKILL.md",
+      "description": "Use when drafting news, analysis, opinion, investigation, feature, briefing, LinkedIn, X thread, or longform text from a prepared mission brief and claim ledger."
+    },
+    {
+      "name": "jstack-copy-desk",
+      "family": "writing",
+      "score": 95,
+      "path": "skills/jstack-copy-desk/SKILL.md",
+      "description": "Use when tightening, restructuring, headline-testing, style-checking, and copyediting a draft without changing the evidence level or editorial mission."
+    },
+    {
+      "name": "jstack-seo-distribution",
+      "family": "distribution",
+      "score": 94,
+      "path": "skills/jstack-seo-distribution/SKILL.md",
+      "description": "Use when turning a publishable story into search-intent, metadata, landing-page, newsletter, and audience-development material without overstating claims."
+    },
+    {
+      "name": "jstack-social-package",
+      "family": "distribution",
+      "score": 95,
+      "path": "skills/jstack-social-package/SKILL.md",
+      "description": "Use when creating X, LinkedIn, newsletter, short-video, podcast, or thread drafts from a publication-ready story while preserving evidence boundaries and human approval."
+    },
+    {
+      "name": "jstack-redteam",
+      "family": "safety",
+      "score": 97,
+      "path": "skills/jstack-redteam/SKILL.md",
+      "description": "Use for hostile pre-publication review by personas such as subject lawyer, skeptical editor, hostile opponent, platform moderator, fact checker, and ordinary intelligent reader."
+    },
+    {
+      "name": "jstack-ship",
+      "family": "safety",
+      "score": 98,
+      "path": "skills/jstack-ship/SKILL.md",
+      "description": "Use as the final publication gate for J-Stack work. Verifies mission, sources, claims, countercase, legal/ethics, red-team fixes, headlines, social snippets, GBrain record, and human approval."
+    },
+    {
+      "name": "jstack-postpub",
+      "family": "post-publication",
+      "score": 95,
+      "path": "skills/jstack-postpub/SKILL.md",
+      "description": "Use after publication to monitor corrections, rebuttals, legal letters, new evidence, source rot, reader questions, follow-up stories, and GBrain timeline updates."
+    },
+    {
+      "name": "jstack-gbrain-memory",
+      "family": "gbrain",
+      "score": 97,
+      "path": "skills/jstack-gbrain-memory/SKILL.md",
+      "description": "Use when turning J-Stack story artifacts into durable GBrain knowledge: story hubs, source cards, claim pages, evidence pages, entity graph links, timelines, corrections, and reusable background."
+    }
+  ],
+  "shared_docs": [
+    "README.md",
+    "ARCHITECTURE.md",
+    "GBRAIN-INTEGRATION.md",
+    "QUALITY-GATES.md",
+    "PUBLICATION-READINESS.md",
+    "MANIFEST.md",
+    "MANIFEST.json",
+    "LICENSE",
+    "CONTRIBUTING.md",
+    "REDTEAM-HARDENING-REPORT.md",
+    "HARDENING-AUDIT.json"
+  ],
+  "scripts": [
+    "scripts/validate_jstack.py",
+    "scripts/hardening_audit_jstack.py"
+  ],
+  "last_hardened_at": "2026-05-28T11:08:22+00:00"
+}

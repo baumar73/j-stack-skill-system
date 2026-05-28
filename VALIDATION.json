@@ -1,0 +1,162 @@
+{
+  "skill_count": 26,
+  "errors": [],
+  "skills": [
+    {
+      "path": "skills/jstack-assignment-desk/SKILL.md",
+      "name": "jstack-assignment-desk",
+      "description_len": 153,
+      "chars": 5962
+    },
+    {
+      "path": "skills/jstack-claim-ledger/SKILL.md",
+      "name": "jstack-claim-ledger",
+      "description_len": 158,
+      "chars": 5910
+    },
+    {
+      "path": "skills/jstack-command-center/SKILL.md",
+      "name": "jstack-command-center",
+      "description_len": 209,
+      "chars": 6241
+    },
+    {
+      "path": "skills/jstack-copy-desk/SKILL.md",
+      "name": "jstack-copy-desk",
+      "description_len": 151,
+      "chars": 5717
+    },
+    {
+      "path": "skills/jstack-countercase/SKILL.md",
+      "name": "jstack-countercase",
+      "description_len": 166,
+      "chars": 5913
+    },
+    {
+      "path": "skills/jstack-data-journalism/SKILL.md",
+      "name": "jstack-data-journalism",
+      "description_len": 143,
+      "chars": 5769
+    },
+    {
+      "path": "skills/jstack-document-review/SKILL.md",
+      "name": "jstack-document-review",
+      "description_len": 178,
+      "chars": 5878
+    },
+    {
+      "path": "skills/jstack-draft/SKILL.md",
+      "name": "jstack-draft",
+      "description_len": 161,
+      "chars": 5822
+    },
+    {
+      "path": "skills/jstack-editorial-line/SKILL.md",
+      "name": "jstack-editorial-line",
+      "description_len": 152,
+      "chars": 5952
+    },
+    {
+      "path": "skills/jstack-entity-graph/SKILL.md",
+      "name": "jstack-entity-graph",
+      "description_len": 157,
+      "chars": 5852
+    },
+    {
+      "path": "skills/jstack-ethics-check/SKILL.md",
+      "name": "jstack-ethics-check",
+      "description_len": 160,
+      "chars": 5825
+    },
+    {
+      "path": "skills/jstack-evidence-ledger/SKILL.md",
+      "name": "jstack-evidence-ledger",
+      "description_len": 171,
+      "chars": 5811
+    },
+    {
+      "path": "skills/jstack-gbrain-memory/SKILL.md",
+      "name": "jstack-gbrain-memory",
+      "description_len": 195,
+      "chars": 5978
+    },
+    {
+      "path": "skills/jstack-interview-prep/SKILL.md",
+      "name": "jstack-interview-prep",
+      "description_len": 146,
+      "chars": 5881
+    },
+    {
+      "path": "skills/jstack-investigate/SKILL.md",
+      "name": "jstack-investigate",
+      "description_len": 175,
+      "chars": 5807
+    },
+    {
+      "path": "skills/jstack-legal-risk/SKILL.md",
+      "name": "jstack-legal-risk",
+      "description_len": 208,
+      "chars": 6003
+    },
+    {
+      "path": "skills/jstack-office-hours/SKILL.md",
+      "name": "jstack-office-hours",
+      "description_len": 163,
+      "chars": 5986
+    },
+    {
+      "path": "skills/jstack-osint-research/SKILL.md",
+      "name": "jstack-osint-research",
+      "description_len": 197,
+      "chars": 6039
+    },
+    {
+      "path": "skills/jstack-postpub/SKILL.md",
+      "name": "jstack-postpub",
+      "description_len": 163,
+      "chars": 5740
+    },
+    {
+      "path": "skills/jstack-primary-source-research/SKILL.md",
+      "name": "jstack-primary-source-research",
+      "description_len": 195,
+      "chars": 5971
+    },
+    {
+      "path": "skills/jstack-redteam/SKILL.md",
+      "name": "jstack-redteam",
+      "description_len": 177,
+      "chars": 5874
+    },
+    {
+      "path": "skills/jstack-seo-distribution/SKILL.md",
+      "name": "jstack-seo-distribution",
+      "description_len": 154,
+      "chars": 5764
+    },
+    {
+      "path": "skills/jstack-ship/SKILL.md",
+      "name": "jstack-ship",
+      "description_len": 192,
+      "chars": 6027
+    },
+    {
+      "path": "skills/jstack-social-package/SKILL.md",
+      "name": "jstack-social-package",
+      "description_len": 169,
+      "chars": 5804
+    },
+    {
+      "path": "skills/jstack-source-map/SKILL.md",
+      "name": "jstack-source-map",
+      "description_len": 167,
+      "chars": 5804
+    },
+    {
+      "path": "skills/jstack-timeline/SKILL.md",
+      "name": "jstack-timeline",
+      "description_len": 177,
+      "chars": 5753
+    }
+  ]
+}

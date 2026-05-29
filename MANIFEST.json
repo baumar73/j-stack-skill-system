@@ -191,6 +191,7 @@
   ],
   "shared_docs": [
     "README.md",
+    "DISCLAIMER.md",
     "ARCHITECTURE.md",
     "GBRAIN-INTEGRATION.md",
     "QUALITY-GATES.md",

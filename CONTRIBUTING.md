@@ -15,5 +15,8 @@ J-Stack accepts contributions that improve public-interest journalism workflows 
 - Does the skill have clear trigger/non-trigger sections?
 - Does it state GBrain reads/writes/fallback behavior?
 - Does it include legal/ethical boundaries if public claims are involved?
-- Does it produce concrete artifacts?
+- Does the skill produce concrete artifacts?
 - Is it non-overlapping with existing skills?
+- Does the contribution avoid confidential, privileged, source-sensitive, personal, client, or regulated data unless explicitly approved and redacted?
+- Does it avoid secrets, credentials, provider logs, cookies, tokens, private keys, and screenshots containing sensitive information?
+- Does it preserve the repository disclaimer: no legal/compliance/security advice, no warranty, independent source verification, and human approval for consequential actions?

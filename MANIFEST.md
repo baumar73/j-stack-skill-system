@@ -12,6 +12,7 @@ Last hardened: 2026-05-28T11:08:22+00:00.
 
 - `VALIDATION.json` — latest deterministic skill validation, 26 skills, 0 errors.
 - `HARDENING-AUDIT.json` — second-pass hardening audit, 0 blockers, 0 important issues, 0 nits.
+- `DISCLAIMER.md` — public disclaimer and use notice for experimental skills, no legal/compliance/security advice, no warranty, human approval, data protection, professional secrecy, AI-governance, and secrets hygiene.
 - `REDTEAM-HARDENING-REPORT.md` — human-readable second-pass review summary.
 - `scripts/validate_jstack.py` — frontmatter/structure validator.
 - `scripts/hardening_audit_jstack.py` — read-only hardening audit script.

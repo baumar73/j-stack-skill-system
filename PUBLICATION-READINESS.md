@@ -15,6 +15,7 @@ This package is a public MIT-licensed GBrain-integrated journalism skill collect
 - Current package status: **published public MIT collection after second hardening pass**
 - Latest validation: **0 errors** (`VALIDATION.json`)
 - Latest hardening audit: **0 blockers / 0 important issues / 0 nits** (`HARDENING-AUDIT.json`)
+- Public disclaimer: **added** (`DISCLAIMER.md`) and linked prominently from `README.md`
 
 ## Strong Points
 
@@ -30,6 +31,7 @@ This package is a public MIT-licensed GBrain-integrated journalism skill collect
 - Confirm whether to tag a formal `v1.0.0` release.
 - Decide whether to install selected skills into an active Hermes profile.
 - Human legal review before branding the legal-risk material as suitable for public professional use.
+- Human compliance/security review before using J-Stack with real confidential, source-sensitive, client, personal, or regulated data.
 - Optional: add real worked examples from a non-sensitive public story.
 
 ## Recommendation

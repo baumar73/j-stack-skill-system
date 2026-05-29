@@ -6,6 +6,18 @@ Published: 2026-05-29T11:33:47+00:00
 Owner: Markus Bauer / J-Stack contributors
 License: MIT
 
+## Important Notice: Experimental Skills, No Legal or Compliance Advice
+
+J-Stack is an **experimental open-source skill collection and workflow library** for agentic journalism, investigation, public writing, and publication safety. It is a technical template and starting point, **not** a certified product, legal opinion, compliance framework, security assessment, newsroom policy, or professional service.
+
+Use J-Stack at your own responsibility. The repository and its authors make **no warranty** as to correctness, completeness, timeliness, security, suitability for a particular purpose, legal effect, or production readiness. LLM and agent outputs can be wrong, incomplete, outdated, or hallucinated.
+
+Before using J-Stack with real client, legal, business, personal, confidential, journalistic-source, or otherwise regulated data, you must assess your own deployment, provider, hosting, logging, retention, data transfer, professional secrecy, data protection, AI-governance, editorial, and security obligations. This repository makes **no statement** that any concrete use complies with professional secrecy, confidentiality, GDPR/BDSG, the EU AI Act, Cloud Act/FISA exposure, privilege or seizure protections, employment or works-council rules, platform rules, press law, defamation law, copyright, or any other applicable law.
+
+Do not test with real confidential data unless your environment is approved and documented. Keep secrets, tokens, API keys, credentials, and provider logs out of the repository and issue reports. Verify all citations, statutes, deadlines, calculations, source references, factual claims, and external actions independently. Human approval remains mandatory for publishing, filings, submissions, external messages, source contact, payments, deployments, legal advice, or other consequential actions.
+
+For the full notice, see [`DISCLAIMER.md`](./DISCLAIMER.md).
+
 J-Stack is a professional journalism and publication-safety skill collection for Hermes Agent. It turns AI-assisted journalism into a transparent newsroom workflow: mission, sources, investigation, claims, evidence, entities, timeline, countercase, legal/ethics, draft, copy desk, distribution, red-team, ship gate, and post-publication accountability.
 
 ## Inspiration and Non-Affiliation
@@ -68,5 +80,9 @@ This is a public MIT-licensed skill package. To install, copy selected `skills/<
 - No source contact without approval.
 - No invented citations.
 - No secrets in GBrain.
+- No secrets, tokens, API keys, credentials, or provider logs in the repository or issue reports.
+- No real confidential data in tests unless the deployment is approved and documented.
 - No unsupported criminal or misconduct labels.
 - No claim ships above evidence grade.
+- No legal, compliance, security, or professional-certainty claim without independent human review.
+- Human approval remains mandatory for publishing, filings, submissions, external messages, source contact, payments, deployments, legal advice, or other consequential actions.

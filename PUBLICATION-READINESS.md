@@ -1,17 +1,18 @@
-# Publication Readiness Report — J-Stack Draft
+# Publication Readiness Report — J-Stack
 
 Generated: 2026-05-28T10:30:07+00:00
+Published: 2026-05-29T11:33:47+00:00
 
 ## Executive Summary
 
-This package is a publish-ready candidate draft for a GBrain-integrated journalism skill collection. It is not installed, not committed to a public repository, and not externally published.
+This package is a public MIT-licensed GBrain-integrated journalism skill collection. It is published as source material, but it is not automatically installed into any active Hermes profile.
 
 ## Current Status
 
 - Skills created: 26
 - Core skill target: 95+
 - Helper target: 90+
-- Current package status: **publish-ready candidate after second hardening pass**
+- Current package status: **published public MIT collection after second hardening pass**
 - Latest validation: **0 errors** (`VALIDATION.json`)
 - Latest hardening audit: **0 blockers / 0 important issues / 0 nits** (`HARDENING-AUDIT.json`)
 
@@ -26,12 +27,11 @@ This package is a publish-ready candidate draft for a GBrain-integrated journali
 
 ## Remaining Human Decisions
 
-- Confirm final public name: `J-Stack`, `JStack`, or `jstack`.
-- Confirm repository/license details.
-- Decide whether to publish as a standalone GitHub repository or Hermes skill pack.
+- Confirm whether to tag a formal `v1.0.0` release.
+- Decide whether to install selected skills into an active Hermes profile.
 - Human legal review before branding the legal-risk material as suitable for public professional use.
 - Optional: add real worked examples from a non-sensitive public story.
 
 ## Recommendation
 
-Proceed to human editorial/legal review, add optional worked examples for the two 94/100 helper skills, or prepare a GitHub release package. Do not install or publish until Markus explicitly approves.
+Proceed to human editorial/legal review before treating the legal-risk material as professional advice, add optional worked examples for the two 94/100 helper skills, or tag a GitHub release. Do not install into an active Hermes profile until Markus explicitly approves.

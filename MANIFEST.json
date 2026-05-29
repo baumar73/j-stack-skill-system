@@ -2,7 +2,7 @@
   "name": "j-stack-skill-system",
   "display_name": "J-Stack",
   "generated_at": "2026-05-28T10:30:07+00:00",
-  "status": "publish-ready-candidate-draft",
+  "status": "published-public-mit",
   "inspiration": "Garry Tan / GStack-style operational skills; no affiliation or endorsement implied.",
   "gbrain": "Designed to use GBrain as newsroom memory, source graph, claim ledger, timeline, and publication record.",
   "skills": [
@@ -206,5 +206,8 @@
     "scripts/validate_jstack.py",
     "scripts/hardening_audit_jstack.py"
   ],
-  "last_hardened_at": "2026-05-28T11:08:22+00:00"
+  "last_hardened_at": "2026-05-28T11:08:22+00:00",
+  "published_at": "2026-05-29T11:33:47+00:00",
+  "license": "MIT",
+  "repository": "https://github.com/baumar73/j-stack-skill-system"
 }

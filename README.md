@@ -1,8 +1,10 @@
 # J-Stack — GBrain-Integrated Journalism Skills for Hermes Agent
 
-Status: **publish-ready candidate draft**, not yet installed into the active Hermes profile and not yet published.  
+Status: **published public MIT skill collection**; not automatically installed into any active Hermes profile.  
 Generated: 2026-05-28T10:30:07+00:00  
-Owner: Markus Bauer / Hermes draft workspace
+Published: 2026-05-29T11:33:47+00:00  
+Owner: Markus Bauer / J-Stack contributors
+License: MIT
 
 J-Stack is a professional journalism and publication-safety skill collection for Hermes Agent. It turns AI-assisted journalism into a transparent newsroom workflow: mission, sources, investigation, claims, evidence, entities, timeline, countercase, legal/ethics, draft, copy desk, distribution, red-team, ship gate, and post-publication accountability.
 
@@ -56,9 +58,9 @@ J-Stack is designed to use **GBrain** as the newsroom memory and knowledge graph
 14. `jstack-social-package`
 15. `jstack-postpub`
 
-## Installation Candidate
+## Installation
 
-This is a draft package. To install later, copy selected `skills/<skill>/` directories into a Hermes skill source or publish the repository through the Hermes skills workflow. Do not install globally until reviewed.
+This is a public MIT-licensed skill package. To install, copy selected `skills/<skill>/` directories into a Hermes skill source or consume the repository through the Hermes skills workflow. Do not install globally into production workflows until reviewed for your use case.
 
 ## Safety Defaults
 

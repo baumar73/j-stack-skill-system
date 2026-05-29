@@ -2,7 +2,9 @@
 
 Generated: 2026-05-28T10:30:07+00:00
 
-Status: publish-ready candidate draft.
+Status: public MIT skill collection.
+
+Published: 2026-05-29T11:33:47+00:00.
 
 Last hardened: 2026-05-28T11:08:22+00:00.
 

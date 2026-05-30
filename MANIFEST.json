@@ -2,7 +2,7 @@
   "name": "j-stack-skill-system",
   "display_name": "J-Stack",
   "generated_at": "2026-05-28T10:30:07+00:00",
-  "status": "published-public-mit-country-v1.2-us-v1.1",
+  "status": "published-public-mit-country-v1.2-us-v1.1-osint-atlas-v0.2-draft",
   "us_context_overlay": "references/us-publication-context.md",
   "inspiration": "Garry Tan / GStack-style operational skills; no affiliation or endorsement implied.",
   "gbrain": "Designed to use GBrain as newsroom memory, source graph, claim ledger, timeline, and publication record.",
@@ -55,6 +55,13 @@
       "score": 95,
       "path": "skills/jstack-osint-research/SKILL.md",
       "description": "Use when conducting lawful open-source research across public websites, social profiles, domains, corporate pages, media archives, map traces, public videos, and metadata visible to ordinary users."
+    },
+    {
+      "name": "jstack-osint-source-router",
+      "family": "research",
+      "score": 96,
+      "path": "skills/jstack-osint-source-router/SKILL.md",
+      "description": "Use when selecting lawful public OSINT databases and public-record sources for a J-Stack story before live research. Routes questions to source classes, access/licensing/automation warnings, evidence limits, personal-data risk, citation fields, and claim-ledger next steps. Includes a seed OSINT Source Atlas and non-sensitive worked example."
     },
     {
       "name": "jstack-data-journalism",
@@ -204,7 +211,10 @@
     "LICENSE",
     "CONTRIBUTING.md",
     "REDTEAM-HARDENING-REPORT.md",
-    "HARDENING-AUDIT.json"
+    "HARDENING-AUDIT.json",
+    "sources/README.md",
+    "sources/osint-sources.schema.json",
+    "sources/osint-sources.json"
   ],
   "scripts": [
     "scripts/validate_jstack.py",
@@ -214,5 +224,6 @@
   "published_at": "2026-05-29T11:33:47+00:00",
   "license": "MIT",
   "repository": "https://github.com/baumar73/j-stack-skill-system",
-  "country_context_intake": "references/country-context-intake.md"
+  "country_context_intake": "references/country-context-intake.md",
+  "osint_source_atlas": "sources/osint-sources.json"
 }

@@ -1,5 +1,5 @@
 {
-  "skill_count": 26,
+  "skill_count": 27,
   "errors": [],
   "skills": [
     {
@@ -109,6 +109,12 @@
       "name": "jstack-osint-research",
       "description_len": 197,
       "chars": 8459
+    },
+    {
+      "path": "skills/jstack-osint-source-router/SKILL.md",
+      "name": "jstack-osint-source-router",
+      "description_len": 289,
+      "chars": 15885
     },
     {
       "path": "skills/jstack-postpub/SKILL.md",

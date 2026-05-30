@@ -4,6 +4,19 @@ All notable changes to J-Stack are documented here.
 
 J-Stack follows repository releases for public packaging. Individual skill text may carry its own internal workflow/version language, but the GitHub release tag is the package version users should cite.
 
+## [Unreleased]
+
+### Added
+
+- Draft OSINT Source Atlas under `sources/`, including `osint-sources.json`, `osint-sources.schema.json`, and usage notes.
+- New `jstack-osint-source-router` skill for selecting lawful OSINT/public-record sources before live research.
+- Fictional, non-sensitive worked example for source routing with deterministic `route-check.py` validation.
+
+### Safety notes
+
+- The atlas is a routing aid, not permission to scrape, bypass access controls, or publish sensitive personal data.
+- Source entries classify access, automation boundary, evidence weight, terms/license caution, citation needs, and personal-data risk.
+
 ## [v0.1.0] - 2026-05-30
 
 ### Added

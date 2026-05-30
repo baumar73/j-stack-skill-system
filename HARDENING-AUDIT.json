@@ -1,6 +1,6 @@
 {
-  "file_count": 77,
-  "skill_count": 26,
+  "file_count": 84,
+  "skill_count": 27,
   "bundle_count": 3,
   "template_count": 10,
   "reference_count": 9,
@@ -202,6 +202,17 @@
       "name": "jstack-osint-research",
       "path": "skills/jstack-osint-research/SKILL.md",
       "title": "J-Stack OSINT Research",
+      "checks": {
+        "human_approval": true,
+        "no_external_actions": true,
+        "gbrain": true,
+        "legal_ethics": true
+      }
+    },
+    {
+      "name": "jstack-osint-source-router",
+      "path": "skills/jstack-osint-source-router/SKILL.md",
+      "title": "J-Stack OSINT Source Router",
       "checks": {
         "human_approval": true,
         "no_external_actions": true,

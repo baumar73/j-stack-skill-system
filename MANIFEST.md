@@ -2,7 +2,7 @@
 
 Generated: 2026-05-28T10:30:07+00:00
 
-Status: public MIT skill collection with J-Stack v1.2 country/jurisdiction intake and v1.1 US-context overlay.
+Status: public MIT skill collection with J-Stack v1.2 country/jurisdiction intake, v1.1 US-context overlay, and v0.2 draft OSINT Source Atlas.
 
 Published: 2026-05-29T11:33:47+00:00.
 
@@ -10,11 +10,13 @@ Last hardened: 2026-05-28T11:08:22+00:00.
 
 ## Review Artifacts
 
-- `VALIDATION.json` — latest deterministic skill validation, 26 skills, 0 errors.
+- `VALIDATION.json` — latest deterministic skill validation, 27 skills, 0 errors.
 - `HARDENING-AUDIT.json` — second-pass hardening audit, 0 blockers, 0 important issues, 0 nits.
 - `DISCLAIMER.md` — public disclaimer and use notice for experimental skills, no legal/compliance/security advice, no warranty, human approval, data protection, professional secrecy, AI-governance, and secrets hygiene.
-- `references/country-context-intake.md` — mandatory first-gate country/jurisdiction intake applied across all 26 skills: country, subnational forum, publication venue, platform, audience, subject/source/evidence location, multi-jurisdiction routing, and local-review escalation.
-- `references/us-publication-context.md` — United States publication-safety overlay applied across all 26 skills: federal/state jurisdiction, First Amendment, defamation, privacy torts, anti-SLAPP, source protection, recording/access, copyright/fair use, FTC/platform rules, and local-counsel escalation.
+- `references/country-context-intake.md` — mandatory first-gate country/jurisdiction intake applied across all 27 skills: country, subnational forum, publication venue, platform, audience, subject/source/evidence location, multi-jurisdiction routing, and local-review escalation.
+- `references/us-publication-context.md` — United States publication-safety overlay applied across all 27 skills: federal/state jurisdiction, First Amendment, defamation, privacy torts, anti-SLAPP, source protection, recording/access, copyright/fair use, FTC/platform rules, and local-counsel escalation.
+- `sources/osint-sources.json` — v0.2 draft OSINT Source Atlas for lawful public-source routing, access/licensing/automation warnings, evidence weights, personal-data risk, and citation notes.
+- `sources/osint-sources.schema.json` — JSON Schema for the OSINT Source Atlas.
 - `REDTEAM-HARDENING-REPORT.md` — human-readable second-pass review summary.
 - `scripts/validate_jstack.py` — frontmatter/structure validator.
 - `scripts/hardening_audit_jstack.py` — read-only hardening audit script.
@@ -28,6 +30,7 @@ Last hardened: 2026-05-28T11:08:22+00:00.
 - `jstack-source-map` (research): 97/100 — Use when building a complete source universe for a story: primary sources, secondary sources, adversarial sources, expert sources, missing sources, and archive status.
 - `jstack-primary-source-research` (research): 95/100 — Use when locating and interpreting primary public sources such as statutes, court records, official registers, corporate filings, sanctions lists, press releases, datasets, or original documents.
 - `jstack-osint-research` (research): 95/100 — Use when conducting lawful open-source research across public websites, social profiles, domains, corporate pages, media archives, map traces, public videos, and metadata visible to ordinary users.
+- `jstack-osint-source-router` (research): 96/100 — Use when selecting lawful public OSINT databases and public-record sources for a J-Stack story before live research. Routes questions to source classes, access/licensing/automation warnings, evidence limits, personal-data risk, citation fields, and claim-ledger next steps. Includes a seed OSINT Source Atlas and non-sensitive worked example.
 - `jstack-data-journalism` (research): 95/100 — Use when a story relies on datasets, tables, statistics, scraping outputs, budgets, filings, measurements, or repeatable quantitative analysis. Includes a non-sensitive worked example with a fictional dataset, reproducible calculation, limitations, and safe claim wording.
 - `jstack-interview-prep` (research): 95/100 — Use when preparing interviews, requests for comment, expert calls, hostile-subject questions, source briefings, or right-of-reply outreach drafts.
 - `jstack-document-review` (research): 95/100 — Use when extracting facts, parties, dates, claims, contradictions, and evidence from documents, PDFs, filings, contracts, letters, reports, screenshots, transcripts, or archives.

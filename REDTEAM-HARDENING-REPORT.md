@@ -13,7 +13,7 @@ This pass reviewed skill structure, naming polish, GBrain integration signals, h
 ## Deterministic Audit Result
 
 - Files scanned: **63**
-- Skills scanned: **26**
+- Skills scanned: **27**
 - Bundles: **3**
 - Templates: **10**
 - References: **7**
@@ -25,14 +25,14 @@ Artifact: `HARDENING-AUDIT.json`
 
 ## Validation Result
 
-- Skills validated: **26**
+- Skills validated: **27**
 - Validation errors: **0**
 
 Artifact: `VALIDATION.json`
 
 ## Fixes Applied During Hardening
 
-1. **Title polish across all 26 skills**
+1. **Title polish across all 27 skills**
    - Changed H1 headings from mechanical `Jstack ...` casing to human-facing `J-Stack ...` casing.
    - Preserved machine skill names such as `jstack-command-center` for compatibility.
    - Specific acronym fixes included `GBrain`, `OSINT`, `SEO`, `Red Team`, and `Post-Publication`.

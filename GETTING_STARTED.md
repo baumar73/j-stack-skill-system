@@ -30,28 +30,33 @@ The most useful first skills are usually:
 2. `jstack-editorial-line`
 3. `jstack-command-center`
 4. `jstack-source-map`
-5. `jstack-claim-ledger`
-6. `jstack-legal-risk`
-7. `jstack-ethics-check`
-8. `jstack-ship`
-9. `jstack-postpub`
+5. `jstack-osint-source-router`
+6. `jstack-claim-ledger`
+7. `jstack-legal-risk`
+8. `jstack-ethics-check`
+9. `jstack-ship`
+10. `jstack-postpub`
+
+For OSINT-heavy stories, review [`sources/osint-sources.json`](./sources/osint-sources.json) and use `jstack-osint-source-router` before live collection. The atlas is a routing aid, not permission to scrape, bypass access controls, or publish sensitive personal data.
 
 ## 3. Review the worked examples
 
-The repository includes two fictional, non-sensitive examples:
+The repository includes three fictional, non-sensitive examples:
 
 - [`examples/jstack-data-journalism/`](./examples/jstack-data-journalism/)
 - [`examples/jstack-seo-distribution/`](./examples/jstack-seo-distribution/)
+- [`examples/jstack-osint-source-router/`](./examples/jstack-osint-source-router/)
 
 They are deliberately small. They show the expected pattern: synthetic input, bounded claims, reproducible reasoning, explicit limitations, and human review gates.
 
-Run the SEO metadata example check:
+Run the example checks:
 
 ```bash
 python3 examples/jstack-seo-distribution/metadata-length-check.py
+python3 examples/jstack-osint-source-router/route-check.py
 ```
 
-Expected result: title, meta description, and slug pass their limits, and unsafe clickbait terms are absent.
+Expected result: SEO metadata passes its limits and the OSINT route check validates the source atlas and emits a deterministic fictional source plan.
 
 ## 4. Validate the repository
 

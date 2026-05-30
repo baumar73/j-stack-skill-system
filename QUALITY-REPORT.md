@@ -4,14 +4,14 @@ Generated: 2026-05-28T11:04:20+00:00
 
 ## Validation Summary
 
-- Skills validated: **26**
+- Skills validated: **27**
 - Validation errors: **0**
 - Checks: frontmatter start/end, YAML parse, `name`, `description`, name format/length, description length, file size, required sections (`Overview`, `When to Use`, `GBrain Integration`, `Common Pitfalls`, `Verification Checklist`).
 - Validation artifact: `VALIDATION.json`
 
 ## Score Summary
 
-- Skill count: **26**
+- Skill count: **27**
 - Average score: **96.0/100**
 - Median score: **96.0/100**
 - Highest score: **98/100**
@@ -56,12 +56,13 @@ Generated: 2026-05-28T11:04:20+00:00
 
 ### research
 
-- Count: 7; average: 95.6/100; range: 95–97
+- Count: 8; average: 95.6/100; range: 95–97
 - `jstack-data-journalism`: **95/100** — includes a non-sensitive worked example with a fictional dataset, reproducible calculation, limitations, and safe claim wording.
 - `jstack-document-review`: **95/100**
 - `jstack-interview-prep`: **95/100**
 - `jstack-investigate`: **97/100**
 - `jstack-osint-research`: **95/100**
+- `jstack-osint-source-router`: **96/100** — adds the v0.2 draft OSINT Source Atlas, access/licensing/automation warnings, evidence weights, personal-data risk, citation notes, and a non-sensitive worked example.
 - `jstack-primary-source-research`: **95/100**
 - `jstack-source-map`: **97/100**
 
@@ -81,8 +82,8 @@ Generated: 2026-05-28T11:04:20+00:00
 
 ## Notes
 
-All skills now meet the 95+ target. `jstack-data-journalism` was raised to **95/100** by adding a non-sensitive fictional dataset and full worked example. `jstack-seo-distribution` was raised to **95/100** by adding a non-sensitive fictional SEO/distribution worked example with metadata checks and review gates.
+All skills meet the 95+ target. `jstack-osint-source-router` expands the research family with a source-governance layer before live OSINT collection. `jstack-data-journalism` and `jstack-seo-distribution` retain fictional non-sensitive worked examples.
 
 ## Score Basis
 
-Scores reflect trigger clarity, concrete workflow, artifact output, GBrain integration, safety boundaries, verification steps, and publication-readiness. A second-agent or human editorial review is still recommended before GitHub publication or installation into an active Hermes profile.
+Scores reflect trigger clarity, concrete workflow, artifact output, GBrain integration, safety boundaries, verification steps, and publication-readiness. A second-agent or human editorial review is still recommended before GitHub publication, release tagging, or installation into an active Hermes profile.

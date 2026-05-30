@@ -1,0 +1,2124 @@
+{
+  "version": "0.2.0-seed",
+  "last_reviewed": "2026-05-30",
+  "scope_note": "Curated seed list of public OSINT and public-record sources for J-Stack routing. It is not exhaustive, not legal advice, and not permission to scrape, bypass access controls, or publish sensitive personal data. Verify each source's current terms, license, and official status before use.",
+  "sources": [
+    {
+      "id": "opencorporates",
+      "name": "OpenCorporates",
+      "category": "company-registers",
+      "jurisdiction": "global",
+      "url": "https://opencorporates.com/",
+      "access": "mixed",
+      "automation": "manual-first",
+      "license_tos": "Check OpenCorporates terms and API terms before automated use.",
+      "data_types": [
+        "company profiles",
+        "officers",
+        "filings index",
+        "jurisdiction links"
+      ],
+      "best_for": "Cross-jurisdiction company discovery and officer/entity leads.",
+      "caution": "Often an index into official registers; verify material facts at the original registry.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "index",
+      "citation_note": "Cite the official registry for final assertions when available; cite OpenCorporates as an index.",
+      "tags": [
+        "company-register",
+        "entity",
+        "beneficial-ownership",
+        "global"
+      ]
+    },
+    {
+      "id": "gleif-lei-search",
+      "name": "GLEIF LEI Search",
+      "category": "company-registers",
+      "jurisdiction": "global",
+      "url": "https://search.gleif.org/",
+      "access": "free-public",
+      "automation": "api-preferred",
+      "license_tos": "GLEIF publishes LEI data under its stated open-data terms; check current license before reuse.",
+      "data_types": [
+        "LEI records",
+        "legal names",
+        "registered addresses",
+        "parent relationships"
+      ],
+      "best_for": "Identifying legal entities and corporate hierarchy via LEI records.",
+      "caution": "LEI coverage is incomplete and concentrated among financial/regulated entities.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "primary",
+      "citation_note": "Cite LEI and registration status with retrieval date.",
+      "tags": [
+        "company-register",
+        "entity",
+        "lei",
+        "global"
+      ]
+    },
+    {
+      "id": "uk-companies-house",
+      "name": "UK Companies House Find and update company information",
+      "category": "company-registers",
+      "jurisdiction": "United Kingdom",
+      "url": "https://find-and-update.company-information.service.gov.uk/",
+      "access": "free-public",
+      "automation": "api-preferred",
+      "license_tos": "Use Companies House API and website terms; documents may contain personal data.",
+      "data_types": [
+        "company filings",
+        "officers",
+        "PSC records",
+        "accounts"
+      ],
+      "best_for": "UK company identity, filings, directors, PSC records, charges, accounts.",
+      "caution": "Identity matches need corroboration; officer addresses and birthdays are sensitive.",
+      "personal_data_risk": "high",
+      "evidence_weight": "primary",
+      "citation_note": "Cite company number, filing date, document type, and retrieval date.",
+      "tags": [
+        "company-register",
+        "filings",
+        "uk",
+        "beneficial-ownership"
+      ]
+    },
+    {
+      "id": "sec-edgar",
+      "name": "SEC EDGAR",
+      "category": "company-filings",
+      "jurisdiction": "United States",
+      "url": "https://www.sec.gov/edgar/search/",
+      "access": "free-public",
+      "automation": "api-preferred",
+      "license_tos": "Follow SEC fair-access and bulk-download guidance.",
+      "data_types": [
+        "issuer filings",
+        "10-K",
+        "10-Q",
+        "8-K",
+        "ownership forms"
+      ],
+      "best_for": "US public-company disclosures and regulated filings.",
+      "caution": "SEC filings are issuer/legal disclosures, not independent proof of every factual assertion.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "primary",
+      "citation_note": "Cite accession number, form type, filing date, and exhibit where applicable.",
+      "tags": [
+        "company-filings",
+        "securities",
+        "us",
+        "primary-source"
+      ]
+    },
+    {
+      "id": "canada-sedar-plus",
+      "name": "SEDAR+",
+      "category": "company-filings",
+      "jurisdiction": "Canada",
+      "url": "https://www.sedarplus.ca/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check SEDAR+ terms and securities-regulator guidance.",
+      "data_types": [
+        "issuer filings",
+        "prospectuses",
+        "continuous disclosure"
+      ],
+      "best_for": "Canadian public issuer filings.",
+      "caution": "Coverage and document availability differ by issuer and filing type.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "primary",
+      "citation_note": "Cite issuer, filing type, date, and regulator record.",
+      "tags": [
+        "company-filings",
+        "securities",
+        "canada"
+      ]
+    },
+    {
+      "id": "japan-edinet",
+      "name": "EDINET",
+      "category": "company-filings",
+      "jurisdiction": "Japan",
+      "url": "https://disclosure2.edinet-fsa.go.jp/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check FSA EDINET access terms and language limitations.",
+      "data_types": [
+        "securities reports",
+        "disclosure documents"
+      ],
+      "best_for": "Japanese securities filings and issuer disclosure.",
+      "caution": "Japanese-language source; translation risk must be recorded.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "primary",
+      "citation_note": "Cite EDINET document, issuer, and filing date.",
+      "tags": [
+        "company-filings",
+        "securities",
+        "japan",
+        "translation-risk"
+      ]
+    },
+    {
+      "id": "germany-unternehmensregister",
+      "name": "Unternehmensregister",
+      "category": "company-registers",
+      "jurisdiction": "Germany",
+      "url": "https://www.unternehmensregister.de/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check portal terms; some documents or extracts may have access restrictions.",
+      "data_types": [
+        "company notices",
+        "annual accounts",
+        "register publications"
+      ],
+      "best_for": "German company publications and financial statements.",
+      "caution": "Portal is authoritative for publications but may not replace Handelsregister extracts.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "primary",
+      "citation_note": "Cite company, publication type, date, and register reference.",
+      "tags": [
+        "company-register",
+        "filings",
+        "germany"
+      ]
+    },
+    {
+      "id": "germany-handelsregister",
+      "name": "Handelsregister",
+      "category": "company-registers",
+      "jurisdiction": "Germany",
+      "url": "https://www.handelsregister.de/",
+      "access": "mixed",
+      "automation": "manual-first",
+      "license_tos": "Check official portal terms and fees; do not bypass access controls.",
+      "data_types": [
+        "register extracts",
+        "company officers",
+        "corporate events"
+      ],
+      "best_for": "German commercial-register facts.",
+      "caution": "Some documents may require paid retrieval; personal data minimization required.",
+      "personal_data_risk": "high",
+      "evidence_weight": "primary",
+      "citation_note": "Cite register court, register number, document type, and retrieval date.",
+      "tags": [
+        "company-register",
+        "filings",
+        "germany",
+        "primary-source"
+      ]
+    },
+    {
+      "id": "panama-registro-publico",
+      "name": "Registro Público de Panamá",
+      "category": "company-registers",
+      "jurisdiction": "Panama",
+      "url": "https://www.rp.gob.pa/",
+      "access": "mixed",
+      "automation": "manual-first",
+      "license_tos": "Use official registry access rules; paid or account-based extracts may apply.",
+      "data_types": [
+        "company records",
+        "property records",
+        "registry filings"
+      ],
+      "best_for": "Panama public registry leads and official extracts where available.",
+      "caution": "Do not infer beneficial ownership or control solely from names; verify extracts.",
+      "personal_data_risk": "high",
+      "evidence_weight": "primary",
+      "citation_note": "Cite official entry/extract identifiers and retrieval date.",
+      "tags": [
+        "company-register",
+        "property",
+        "panama",
+        "primary-source"
+      ]
+    },
+    {
+      "id": "australia-asic-registers",
+      "name": "ASIC Registers",
+      "category": "company-registers",
+      "jurisdiction": "Australia",
+      "url": "https://asic.gov.au/online-services/search-asics-registers/",
+      "access": "mixed",
+      "automation": "manual-first",
+      "license_tos": "Check ASIC search terms and fee rules.",
+      "data_types": [
+        "company records",
+        "business names",
+        "professional registers"
+      ],
+      "best_for": "Australian companies and registered business names.",
+      "caution": "Some details require paid extracts; identity matches need corroboration.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "primary",
+      "citation_note": "Cite ACN/ABN, register record, and retrieval date.",
+      "tags": [
+        "company-register",
+        "australia"
+      ]
+    },
+    {
+      "id": "new-zealand-companies-register",
+      "name": "New Zealand Companies Register",
+      "category": "company-registers",
+      "jurisdiction": "New Zealand",
+      "url": "https://companies-register.companiesoffice.govt.nz/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check Companies Office terms.",
+      "data_types": [
+        "company records",
+        "directors",
+        "shareholdings",
+        "filings"
+      ],
+      "best_for": "New Zealand company identity and filings.",
+      "caution": "Director and shareholder data may be personal data; minimize in outputs.",
+      "personal_data_risk": "high",
+      "evidence_weight": "primary",
+      "citation_note": "Cite NZBN/company number, filing, and retrieval date.",
+      "tags": [
+        "company-register",
+        "new-zealand"
+      ]
+    },
+    {
+      "id": "singapore-bizfile",
+      "name": "ACRA BizFile",
+      "category": "company-registers",
+      "jurisdiction": "Singapore",
+      "url": "https://www.bizfile.gov.sg/",
+      "access": "mixed",
+      "automation": "manual-first",
+      "license_tos": "Check ACRA terms, fees, and permitted reuse.",
+      "data_types": [
+        "business profiles",
+        "company records"
+      ],
+      "best_for": "Singapore company and business-record lookup.",
+      "caution": "Official extracts may be paid; do not automate login or paid flows.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "primary",
+      "citation_note": "Cite ACRA record or extract details.",
+      "tags": [
+        "company-register",
+        "singapore"
+      ]
+    },
+    {
+      "id": "hong-kong-icris",
+      "name": "Hong Kong Companies Registry ICRIS",
+      "category": "company-registers",
+      "jurisdiction": "Hong Kong",
+      "url": "https://www.icris.cr.gov.hk/",
+      "access": "mixed",
+      "automation": "manual-first",
+      "license_tos": "Check ICRIS terms, fee, and access rules.",
+      "data_types": [
+        "company records",
+        "documents",
+        "directors"
+      ],
+      "best_for": "Hong Kong company-record retrieval.",
+      "caution": "Manual/paid access may apply; respect portal restrictions.",
+      "personal_data_risk": "high",
+      "evidence_weight": "primary",
+      "citation_note": "Cite company number, document name, and retrieval date.",
+      "tags": [
+        "company-register",
+        "hong-kong"
+      ]
+    },
+    {
+      "id": "opensanctions",
+      "name": "OpenSanctions",
+      "category": "sanctions-pep",
+      "jurisdiction": "global",
+      "url": "https://www.opensanctions.org/",
+      "access": "mixed",
+      "automation": "api-preferred",
+      "license_tos": "Check OpenSanctions dataset licenses and source-specific restrictions.",
+      "data_types": [
+        "sanctions lists",
+        "PEP data",
+        "watchlists",
+        "entity matching"
+      ],
+      "best_for": "Screening names across many sanctions and risk lists for leads.",
+      "caution": "OpenSanctions aggregates; verify designations at the original authority before publishing.",
+      "personal_data_risk": "high",
+      "evidence_weight": "index",
+      "citation_note": "Cite OpenSanctions as aggregation and cite original list for final designation facts.",
+      "tags": [
+        "sanctions",
+        "pep",
+        "watchlist",
+        "entity"
+      ]
+    },
+    {
+      "id": "eu-sanctions-map",
+      "name": "EU Sanctions Map",
+      "category": "sanctions-pep",
+      "jurisdiction": "European Union",
+      "url": "https://www.sanctionsmap.eu/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check EU site terms and official legal acts on EUR-Lex.",
+      "data_types": [
+        "EU sanctions regimes",
+        "measures",
+        "legal references"
+      ],
+      "best_for": "EU sanctions regime overview and legal-act pointers.",
+      "caution": "For named designations, verify in the official consolidated list and EUR-Lex act.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "index",
+      "citation_note": "Cite legal act and consolidated-list entry for final claims.",
+      "tags": [
+        "sanctions",
+        "eu",
+        "primary-source"
+      ]
+    },
+    {
+      "id": "eu-consolidated-financial-sanctions-list",
+      "name": "EU Financial Sanctions Consolidated List",
+      "category": "sanctions-pep",
+      "jurisdiction": "European Union",
+      "url": "https://data.europa.eu/data/datasets/consolidated-list-of-persons-groups-and-entities-subject-to-eu-financial-sanctions",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check data.europa.eu dataset terms and official update timestamp.",
+      "data_types": [
+        "sanctions entries",
+        "identifiers",
+        "aliases"
+      ],
+      "best_for": "EU financial-sanctions named-person/entity checks.",
+      "caution": "Still verify statement of reasons in the legal act where claims go beyond list membership.",
+      "personal_data_risk": "high",
+      "evidence_weight": "primary",
+      "citation_note": "Cite dataset timestamp plus EUR-Lex act where material.",
+      "tags": [
+        "sanctions",
+        "eu",
+        "dataset",
+        "primary-source"
+      ]
+    },
+    {
+      "id": "ofac-sanctions-search",
+      "name": "OFAC Sanctions List Search",
+      "category": "sanctions-pep",
+      "jurisdiction": "United States",
+      "url": "https://sanctionssearch.ofac.treas.gov/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Use OFAC data and search guidance; bulk data is separately published by OFAC.",
+      "data_types": [
+        "SDN list",
+        "non-SDN sanctions lists",
+        "aliases"
+      ],
+      "best_for": "US sanctions name checks.",
+      "caution": "Name similarity is not a match; publish only after identifier-level verification.",
+      "personal_data_risk": "high",
+      "evidence_weight": "primary",
+      "citation_note": "Cite OFAC list, program, identifiers, and retrieval date.",
+      "tags": [
+        "sanctions",
+        "us",
+        "primary-source"
+      ]
+    },
+    {
+      "id": "un-security-council-consolidated-list",
+      "name": "UN Security Council Consolidated List",
+      "category": "sanctions-pep",
+      "jurisdiction": "United Nations",
+      "url": "https://main.un.org/securitycouncil/en/content/un-sc-consolidated-list",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Use UN list terms and official update date.",
+      "data_types": [
+        "UN sanctions entries",
+        "aliases",
+        "narrative summaries"
+      ],
+      "best_for": "UN sanctions designation checks.",
+      "caution": "UN narrative summaries can be politically sensitive; quote carefully and date the list.",
+      "personal_data_risk": "high",
+      "evidence_weight": "primary",
+      "citation_note": "Cite list entry number, identifiers, and update date.",
+      "tags": [
+        "sanctions",
+        "un",
+        "primary-source"
+      ]
+    },
+    {
+      "id": "uk-ofsi-sanctions-search",
+      "name": "UK OFSI Consolidated List Search",
+      "category": "sanctions-pep",
+      "jurisdiction": "United Kingdom",
+      "url": "https://sanctionssearch.ofsi.hmtreasury.gov.uk/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check OFSI usage terms and consolidated list downloads.",
+      "data_types": [
+        "UK sanctions entries",
+        "aliases",
+        "programs"
+      ],
+      "best_for": "UK financial-sanctions checks.",
+      "caution": "Verify identifiers; do not rely on name-only matches.",
+      "personal_data_risk": "high",
+      "evidence_weight": "primary",
+      "citation_note": "Cite OFSI entry, regime, identifiers, and retrieval date.",
+      "tags": [
+        "sanctions",
+        "uk",
+        "primary-source"
+      ]
+    },
+    {
+      "id": "canada-consolidated-sanctions-list",
+      "name": "Canada Consolidated Autonomous Sanctions List",
+      "category": "sanctions-pep",
+      "jurisdiction": "Canada",
+      "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/consolidated-consolide.aspx",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check Global Affairs Canada terms and update date.",
+      "data_types": [
+        "Canadian sanctions entries",
+        "aliases"
+      ],
+      "best_for": "Canadian sanctions checks.",
+      "caution": "List membership must be separated from allegations in external commentary.",
+      "personal_data_risk": "high",
+      "evidence_weight": "primary",
+      "citation_note": "Cite Canadian list, regulation, and retrieval date.",
+      "tags": [
+        "sanctions",
+        "canada",
+        "primary-source"
+      ]
+    },
+    {
+      "id": "world-bank-debarred-firms",
+      "name": "World Bank Listing of Ineligible Firms and Individuals",
+      "category": "sanctions-debarment",
+      "jurisdiction": "global",
+      "url": "https://www.worldbank.org/en/projects-operations/procurement/debarred-firms",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check World Bank terms and sanctions-system explanations.",
+      "data_types": [
+        "debarments",
+        "cross-debarments",
+        "firm names"
+      ],
+      "best_for": "Procurement debarment and integrity sanctions checks.",
+      "caution": "Debarment is not the same as a criminal conviction; preserve legal wording.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "primary",
+      "citation_note": "Cite firm/person, grounds category where stated, period, and retrieval date.",
+      "tags": [
+        "debarment",
+        "procurement",
+        "world-bank"
+      ]
+    },
+    {
+      "id": "sam-exclusions",
+      "name": "SAM.gov Exclusions",
+      "category": "sanctions-debarment",
+      "jurisdiction": "United States",
+      "url": "https://sam.gov/content/exclusions",
+      "access": "mixed",
+      "automation": "manual-first",
+      "license_tos": "Use SAM.gov terms and account/access rules; APIs may need registration.",
+      "data_types": [
+        "US exclusions",
+        "debarments",
+        "suspensions"
+      ],
+      "best_for": "US federal exclusion checks for contractors and grantees.",
+      "caution": "Avoid treating exclusion data as proof of broader misconduct.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "primary",
+      "citation_note": "Cite SAM UEI/CAGE/name, exclusion type, and retrieval date.",
+      "tags": [
+        "debarment",
+        "procurement",
+        "us"
+      ]
+    },
+    {
+      "id": "ted-eu",
+      "name": "Tenders Electronic Daily",
+      "category": "procurement",
+      "jurisdiction": "European Union",
+      "url": "https://ted.europa.eu/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check TED terms and eForms data guidance.",
+      "data_types": [
+        "EU public procurement notices",
+        "award notices"
+      ],
+      "best_for": "EU procurement opportunities and awards above thresholds.",
+      "caution": "TED notices can be incomplete; verify award facts with authority documents where possible.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "primary",
+      "citation_note": "Cite notice number, publication date, contracting authority, and lot.",
+      "tags": [
+        "procurement",
+        "eu",
+        "contracts"
+      ]
+    },
+    {
+      "id": "sam-gov",
+      "name": "SAM.gov",
+      "category": "procurement",
+      "jurisdiction": "United States",
+      "url": "https://sam.gov/",
+      "access": "mixed",
+      "automation": "manual-first",
+      "license_tos": "Check SAM.gov terms and API/account rules.",
+      "data_types": [
+        "US opportunities",
+        "entity records",
+        "contract data links"
+      ],
+      "best_for": "US federal procurement opportunities and entity registration leads.",
+      "caution": "Account/API access may be needed; do not bypass rate limits or login rules.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "primary",
+      "citation_note": "Cite notice ID, agency, date, and URL.",
+      "tags": [
+        "procurement",
+        "us",
+        "contracts"
+      ]
+    },
+    {
+      "id": "usaspending",
+      "name": "USAspending.gov",
+      "category": "public-spending",
+      "jurisdiction": "United States",
+      "url": "https://www.usaspending.gov/",
+      "access": "free-public",
+      "automation": "api-preferred",
+      "license_tos": "USAspending offers API/bulk data; check data definitions and caveats.",
+      "data_types": [
+        "federal awards",
+        "grants",
+        "contracts",
+        "recipients"
+      ],
+      "best_for": "US federal spending, recipients, agencies, award amounts.",
+      "caution": "Award data can lag and classifications can be messy; verify large claims with source documents.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "primary",
+      "citation_note": "Cite award ID, recipient, agency, fiscal year, and retrieval date.",
+      "tags": [
+        "spending",
+        "procurement",
+        "us",
+        "dataset"
+      ]
+    },
+    {
+      "id": "world-bank-projects",
+      "name": "World Bank Projects and Operations",
+      "category": "public-spending",
+      "jurisdiction": "global",
+      "url": "https://projects.worldbank.org/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check World Bank data terms.",
+      "data_types": [
+        "projects",
+        "financing",
+        "procurement documents"
+      ],
+      "best_for": "World Bank projects, financing, procurement, and project documents.",
+      "caution": "Project pages do not prove performance or misconduct without supporting documents.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "primary",
+      "citation_note": "Cite project ID, document title, and date.",
+      "tags": [
+        "projects",
+        "development",
+        "world-bank"
+      ]
+    },
+    {
+      "id": "ungm-contract-awards",
+      "name": "UNGM Contract Awards",
+      "category": "procurement",
+      "jurisdiction": "United Nations",
+      "url": "https://www.ungm.org/Public/ContractAward",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check UNGM terms and agency-specific procurement rules.",
+      "data_types": [
+        "UN contract awards",
+        "vendors",
+        "agencies"
+      ],
+      "best_for": "UN procurement award leads.",
+      "caution": "Coverage varies by agency; verify with procurement notices and agency records.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "primary",
+      "citation_note": "Cite award, agency, supplier, date, and retrieval date.",
+      "tags": [
+        "procurement",
+        "un",
+        "contracts"
+      ]
+    },
+    {
+      "id": "uk-contracts-finder",
+      "name": "UK Contracts Finder",
+      "category": "procurement",
+      "jurisdiction": "United Kingdom",
+      "url": "https://www.contractsfinder.service.gov.uk/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check UK government terms and Crown copyright/open-government license notes.",
+      "data_types": [
+        "UK public contracts",
+        "notices",
+        "awards"
+      ],
+      "best_for": "UK public-sector contract notices and awards.",
+      "caution": "Not all devolved/local or high-value procurement is fully captured here.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "primary",
+      "citation_note": "Cite notice ID, buyer, supplier, value, and date.",
+      "tags": [
+        "procurement",
+        "uk",
+        "contracts"
+      ]
+    },
+    {
+      "id": "austender",
+      "name": "AusTender",
+      "category": "procurement",
+      "jurisdiction": "Australia",
+      "url": "https://www.tenders.gov.au/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check AusTender terms and Commonwealth procurement rules.",
+      "data_types": [
+        "tenders",
+        "contracts",
+        "standing offers"
+      ],
+      "best_for": "Australian Government procurement notices and contracts.",
+      "caution": "Contract amendments and panel arrangements need careful interpretation.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "primary",
+      "citation_note": "Cite ATM/CN number, agency, supplier, and date.",
+      "tags": [
+        "procurement",
+        "australia",
+        "contracts"
+      ]
+    },
+    {
+      "id": "eu-funding-tenders",
+      "name": "EU Funding and Tenders Portal",
+      "category": "public-spending",
+      "jurisdiction": "European Union",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check portal terms and programme-specific rules.",
+      "data_types": [
+        "EU grants",
+        "projects",
+        "beneficiaries",
+        "calls"
+      ],
+      "best_for": "EU grants, funded projects, beneficiaries, calls, and programme documents.",
+      "caution": "Grant participation does not establish policy influence or misconduct.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "primary",
+      "citation_note": "Cite project ID, call, programme, beneficiaries, and date.",
+      "tags": [
+        "grants",
+        "eu",
+        "funding"
+      ]
+    },
+    {
+      "id": "eur-lex",
+      "name": "EUR-Lex",
+      "category": "law-courts",
+      "jurisdiction": "European Union",
+      "url": "https://eur-lex.europa.eu/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "EU legal texts are public; verify CELEX and consolidation status.",
+      "data_types": [
+        "EU law",
+        "treaties",
+        "regulations",
+        "directives",
+        "case law"
+      ],
+      "best_for": "EU legal acts, preparatory acts, consolidated law, and case law.",
+      "caution": "Always distinguish proposal, adopted act, consolidated text, and case-law status.",
+      "personal_data_risk": "low",
+      "evidence_weight": "primary",
+      "citation_note": "Cite CELEX number, date, title, and consolidation date if relevant.",
+      "tags": [
+        "law",
+        "eu",
+        "primary-source"
+      ]
+    },
+    {
+      "id": "hudoc-echr",
+      "name": "HUDOC ECHR",
+      "category": "law-courts",
+      "jurisdiction": "Council of Europe",
+      "url": "https://hudoc.echr.coe.int/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Use HUDOC terms and official judgment status.",
+      "data_types": [
+        "ECHR judgments",
+        "decisions",
+        "advisory opinions"
+      ],
+      "best_for": "European human-rights case law.",
+      "caution": "Distinguish Chamber, Grand Chamber, finality, and admissibility decisions.",
+      "personal_data_risk": "low",
+      "evidence_weight": "primary",
+      "citation_note": "Cite application number, chamber, date, and paragraph.",
+      "tags": [
+        "law",
+        "human-rights",
+        "europe"
+      ]
+    },
+    {
+      "id": "courtlistener",
+      "name": "CourtListener",
+      "category": "law-courts",
+      "jurisdiction": "United States",
+      "url": "https://www.courtlistener.com/",
+      "access": "free-public",
+      "automation": "api-preferred",
+      "license_tos": "Check Free Law Project terms and data sources.",
+      "data_types": [
+        "US opinions",
+        "dockets",
+        "judges",
+        "oral arguments"
+      ],
+      "best_for": "US case-law and docket leads.",
+      "caution": "For consequential claims, verify against official court documents or RECAP where possible.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "secondary",
+      "citation_note": "Cite CourtListener page and official docket/opinion where possible.",
+      "tags": [
+        "law",
+        "us",
+        "court",
+        "index"
+      ]
+    },
+    {
+      "id": "recap-archive",
+      "name": "RECAP Archive",
+      "category": "law-courts",
+      "jurisdiction": "United States",
+      "url": "https://www.courtlistener.com/recap/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check Free Law Project terms; PACER-origin documents can contain personal data.",
+      "data_types": [
+        "federal court filings",
+        "dockets",
+        "PDF documents"
+      ],
+      "best_for": "US federal court filings obtained through RECAP.",
+      "caution": "Court filings may contain allegations and private data; redact/minimize before reuse.",
+      "personal_data_risk": "high",
+      "evidence_weight": "primary",
+      "citation_note": "Cite docket number, filing number, court, and document date.",
+      "tags": [
+        "law",
+        "us",
+        "court-filings",
+        "primary-source"
+      ]
+    },
+    {
+      "id": "us-supreme-court-opinions",
+      "name": "Supreme Court of the United States Opinions",
+      "category": "law-courts",
+      "jurisdiction": "United States",
+      "url": "https://www.supremecourt.gov/opinions/opinions.aspx",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Official Supreme Court opinions are public; check slip vs bound versions.",
+      "data_types": [
+        "opinions",
+        "orders",
+        "slip opinions"
+      ],
+      "best_for": "Official US Supreme Court opinions.",
+      "caution": "Slip opinions can be revised; record version/date.",
+      "personal_data_risk": "low",
+      "evidence_weight": "primary",
+      "citation_note": "Cite case name, docket, US reporter/slip opinion date, and page/pin.",
+      "tags": [
+        "law",
+        "us",
+        "supreme-court"
+      ]
+    },
+    {
+      "id": "bverfg-decisions",
+      "name": "Bundesverfassungsgericht Entscheidungen",
+      "category": "law-courts",
+      "jurisdiction": "Germany",
+      "url": "https://www.bundesverfassungsgericht.de/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Use official BVerfG decisions and press releases carefully.",
+      "data_types": [
+        "constitutional decisions",
+        "press releases"
+      ],
+      "best_for": "German constitutional-law decisions and official releases.",
+      "caution": "Press releases are summaries; final assertions should cite decision text.",
+      "personal_data_risk": "low",
+      "evidence_weight": "primary",
+      "citation_note": "Cite docket, date, chamber/senate, and paragraph.",
+      "tags": [
+        "law",
+        "germany",
+        "constitutional-court"
+      ]
+    },
+    {
+      "id": "bgh-decisions",
+      "name": "Bundesgerichtshof Entscheidungen",
+      "category": "law-courts",
+      "jurisdiction": "Germany",
+      "url": "https://www.bundesgerichtshof.de/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Use official BGH site terms and decision text.",
+      "data_types": [
+        "civil/criminal decisions",
+        "press releases"
+      ],
+      "best_for": "German Federal Court of Justice decisions and press releases.",
+      "caution": "Press releases are not full reasons; cite decision where available.",
+      "personal_data_risk": "low",
+      "evidence_weight": "primary",
+      "citation_note": "Cite docket, date, and paragraph/page.",
+      "tags": [
+        "law",
+        "germany",
+        "court"
+      ]
+    },
+    {
+      "id": "canlii",
+      "name": "CanLII",
+      "category": "law-courts",
+      "jurisdiction": "Canada",
+      "url": "https://www.canlii.org/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check CanLII terms and court/source status.",
+      "data_types": [
+        "Canadian cases",
+        "statutes",
+        "regulations"
+      ],
+      "best_for": "Canadian legal research and case-law lookup.",
+      "caution": "Verify currency and official status for statutory text.",
+      "personal_data_risk": "low",
+      "evidence_weight": "secondary",
+      "citation_note": "Cite CanLII reference plus court/date/paragraph.",
+      "tags": [
+        "law",
+        "canada",
+        "court"
+      ]
+    },
+    {
+      "id": "bailii",
+      "name": "BAILII",
+      "category": "law-courts",
+      "jurisdiction": "United Kingdom and Ireland",
+      "url": "https://www.bailii.org/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check BAILII terms and neutral citation status.",
+      "data_types": [
+        "cases",
+        "tribunal decisions",
+        "legal materials"
+      ],
+      "best_for": "UK/Ireland case law and legal materials.",
+      "caution": "Coverage is broad but not complete; use neutral citations.",
+      "personal_data_risk": "low",
+      "evidence_weight": "secondary",
+      "citation_note": "Cite neutral citation, court, date, and paragraph.",
+      "tags": [
+        "law",
+        "uk",
+        "ireland",
+        "court"
+      ]
+    },
+    {
+      "id": "austlii",
+      "name": "AustLII",
+      "category": "law-courts",
+      "jurisdiction": "Australia",
+      "url": "https://www.austlii.edu.au/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check AustLII terms and source status.",
+      "data_types": [
+        "Australian cases",
+        "legislation",
+        "treaties"
+      ],
+      "best_for": "Australian case law and statutes.",
+      "caution": "Verify statutory currency and court source.",
+      "personal_data_risk": "low",
+      "evidence_weight": "secondary",
+      "citation_note": "Cite court, neutral citation, date, and paragraph.",
+      "tags": [
+        "law",
+        "australia",
+        "court"
+      ]
+    },
+    {
+      "id": "icj-cases",
+      "name": "International Court of Justice",
+      "category": "law-courts",
+      "jurisdiction": "International",
+      "url": "https://www.icj-cij.org/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Official ICJ materials are public; check procedural stage.",
+      "data_types": [
+        "judgments",
+        "orders",
+        "pleadings",
+        "advisory opinions"
+      ],
+      "best_for": "International legal disputes and ICJ documents.",
+      "caution": "Distinguish pleadings/allegations from court findings.",
+      "personal_data_risk": "low",
+      "evidence_weight": "primary",
+      "citation_note": "Cite case, document type, date, and paragraph/page.",
+      "tags": [
+        "law",
+        "international",
+        "court"
+      ]
+    },
+    {
+      "id": "icc-cases",
+      "name": "International Criminal Court",
+      "category": "law-courts",
+      "jurisdiction": "International",
+      "url": "https://www.icc-cpi.int/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Official ICC materials are public; check procedural stage.",
+      "data_types": [
+        "case records",
+        "warrants",
+        "press releases",
+        "decisions"
+      ],
+      "best_for": "ICC public case records and procedural documents.",
+      "caution": "Allegations and charges are not findings; preserve presumption language.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "primary",
+      "citation_note": "Cite case, document number, chamber, date, and paragraph.",
+      "tags": [
+        "law",
+        "international",
+        "criminal-court"
+      ]
+    },
+    {
+      "id": "wipo-patentscope",
+      "name": "WIPO PATENTSCOPE",
+      "category": "ip-patents",
+      "jurisdiction": "global",
+      "url": "https://patentscope.wipo.int/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check WIPO terms and national-phase limitations.",
+      "data_types": [
+        "patent applications",
+        "PCT records",
+        "bibliographic data"
+      ],
+      "best_for": "International patent-application search.",
+      "caution": "Patent publication does not prove validity or infringement.",
+      "personal_data_risk": "low",
+      "evidence_weight": "primary",
+      "citation_note": "Cite publication number, applicant, filing/publication date.",
+      "tags": [
+        "patents",
+        "ip",
+        "global"
+      ]
+    },
+    {
+      "id": "espacenet",
+      "name": "Espacenet",
+      "category": "ip-patents",
+      "jurisdiction": "global",
+      "url": "https://worldwide.espacenet.com/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check EPO terms and source data limitations.",
+      "data_types": [
+        "patents",
+        "patent families",
+        "legal status leads"
+      ],
+      "best_for": "Patent/family discovery and prior-art leads.",
+      "caution": "Legal status should be verified in national registers.",
+      "personal_data_risk": "low",
+      "evidence_weight": "index",
+      "citation_note": "Cite publication number and verify legal status separately.",
+      "tags": [
+        "patents",
+        "ip",
+        "global"
+      ]
+    },
+    {
+      "id": "euipo-esearch",
+      "name": "EUIPO eSearch",
+      "category": "ip-trademarks",
+      "jurisdiction": "European Union",
+      "url": "https://euipo.europa.eu/eSearch/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check EUIPO terms and record status.",
+      "data_types": [
+        "EU trademarks",
+        "designs",
+        "owners",
+        "oppositions"
+      ],
+      "best_for": "EU trademark and design records.",
+      "caution": "Ownership/status changes need date-specific verification.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "primary",
+      "citation_note": "Cite application/registration number, owner, status, and retrieval date.",
+      "tags": [
+        "trademarks",
+        "designs",
+        "eu",
+        "ip"
+      ]
+    },
+    {
+      "id": "uspto-patent-center",
+      "name": "USPTO Patent Center",
+      "category": "ip-patents",
+      "jurisdiction": "United States",
+      "url": "https://patentcenter.uspto.gov/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check USPTO access terms and file-wrapper rules.",
+      "data_types": [
+        "US patent applications",
+        "file wrappers",
+        "office actions"
+      ],
+      "best_for": "US patent prosecution documents.",
+      "caution": "Documents can be technical/legal; avoid overclaiming patent scope.",
+      "personal_data_risk": "low",
+      "evidence_weight": "primary",
+      "citation_note": "Cite application/publication number, document, and date.",
+      "tags": [
+        "patents",
+        "ip",
+        "us"
+      ]
+    },
+    {
+      "id": "uspto-trademark-search",
+      "name": "USPTO Trademark Search",
+      "category": "ip-trademarks",
+      "jurisdiction": "United States",
+      "url": "https://tmsearch.uspto.gov/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check USPTO trademark-search terms and TSDR for record details.",
+      "data_types": [
+        "US trademarks",
+        "owners",
+        "classes",
+        "status"
+      ],
+      "best_for": "US trademark identity/status checks.",
+      "caution": "Search result summaries should be verified in the official record.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "primary",
+      "citation_note": "Cite serial/registration number, status, owner, and retrieval date.",
+      "tags": [
+        "trademarks",
+        "ip",
+        "us"
+      ]
+    },
+    {
+      "id": "dpmaregister",
+      "name": "DPMAregister",
+      "category": "ip-trademarks-patents",
+      "jurisdiction": "Germany",
+      "url": "https://register.dpma.de/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check DPMA terms and register status.",
+      "data_types": [
+        "German trademarks",
+        "patents",
+        "designs",
+        "owners"
+      ],
+      "best_for": "German IP register checks.",
+      "caution": "Status and owner details are date-sensitive.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "primary",
+      "citation_note": "Cite register number, status, owner, and retrieval date.",
+      "tags": [
+        "trademarks",
+        "patents",
+        "ip",
+        "germany"
+      ]
+    },
+    {
+      "id": "google-patents",
+      "name": "Google Patents",
+      "category": "ip-patents",
+      "jurisdiction": "global",
+      "url": "https://patents.google.com/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check Google terms; use as search/index, not final legal-status source.",
+      "data_types": [
+        "patent publications",
+        "prior art",
+        "family leads"
+      ],
+      "best_for": "Fast patent and prior-art discovery.",
+      "caution": "Use official patent office records for final legal/status claims.",
+      "personal_data_risk": "low",
+      "evidence_weight": "index",
+      "citation_note": "Cite official publication when possible; cite Google Patents as an index.",
+      "tags": [
+        "patents",
+        "ip",
+        "search-index"
+      ]
+    },
+    {
+      "id": "internet-archive-wayback",
+      "name": "Internet Archive Wayback Machine",
+      "category": "web-archives",
+      "jurisdiction": "global",
+      "url": "https://web.archive.org/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check Internet Archive terms and robots/capture limitations.",
+      "data_types": [
+        "archived web pages",
+        "capture timestamps"
+      ],
+      "best_for": "Historical website versions and page-preservation leads.",
+      "caution": "Captures can be incomplete and date-sensitive; do not assume page authorship without corroboration.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "secondary",
+      "citation_note": "Cite archived URL, capture timestamp, and live URL if available.",
+      "tags": [
+        "archive",
+        "web",
+        "timeline"
+      ]
+    },
+    {
+      "id": "common-crawl",
+      "name": "Common Crawl",
+      "category": "web-archives",
+      "jurisdiction": "global",
+      "url": "https://commoncrawl.org/",
+      "access": "free-public",
+      "automation": "bulk-download-ok",
+      "license_tos": "Use Common Crawl terms and AWS/public dataset guidance.",
+      "data_types": [
+        "web crawl data",
+        "WARC files",
+        "URL indexes"
+      ],
+      "best_for": "Large-scale historical web corpus analysis.",
+      "caution": "Requires careful filtering; crawl presence does not prove publication prominence.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "index",
+      "citation_note": "Cite crawl ID, WARC record, URL, and retrieval method.",
+      "tags": [
+        "archive",
+        "web",
+        "dataset",
+        "bulk"
+      ]
+    },
+    {
+      "id": "gdelt",
+      "name": "GDELT Project",
+      "category": "media-archives",
+      "jurisdiction": "global",
+      "url": "https://www.gdeltproject.org/",
+      "access": "free-public",
+      "automation": "api-preferred",
+      "license_tos": "Check GDELT data terms and query limitations.",
+      "data_types": [
+        "global news metadata",
+        "events",
+        "translations",
+        "TV/news indexes"
+      ],
+      "best_for": "Media monitoring, event leads, and cross-language news discovery.",
+      "caution": "Machine-coded event data is noisy; verify with original articles.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "lead-only",
+      "citation_note": "Cite GDELT as lead source and cite original article for claims.",
+      "tags": [
+        "media",
+        "news",
+        "global",
+        "dataset"
+      ]
+    },
+    {
+      "id": "wikidata",
+      "name": "Wikidata",
+      "category": "knowledge-graphs",
+      "jurisdiction": "global",
+      "url": "https://www.wikidata.org/",
+      "access": "free-public",
+      "automation": "api-preferred",
+      "license_tos": "Wikidata is open but statements vary in sourcing; check individual references.",
+      "data_types": [
+        "entities",
+        "identifiers",
+        "relationships",
+        "external IDs"
+      ],
+      "best_for": "Entity disambiguation and external-ID discovery.",
+      "caution": "Do not treat unsourced statements as verified facts.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "index",
+      "citation_note": "Cite Wikidata item and original references for material assertions.",
+      "tags": [
+        "entity",
+        "knowledge-graph",
+        "identifiers"
+      ]
+    },
+    {
+      "id": "openalex",
+      "name": "OpenAlex",
+      "category": "research-literature",
+      "jurisdiction": "global",
+      "url": "https://openalex.org/",
+      "access": "free-public",
+      "automation": "api-preferred",
+      "license_tos": "Check OpenAlex license and data snapshot.",
+      "data_types": [
+        "scholarly works",
+        "authors",
+        "institutions",
+        "concepts"
+      ],
+      "best_for": "Academic literature and affiliation discovery.",
+      "caution": "Author/institution disambiguation can be wrong; verify key records.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "index",
+      "citation_note": "Cite DOI/original publisher for final claims.",
+      "tags": [
+        "research",
+        "academia",
+        "literature"
+      ]
+    },
+    {
+      "id": "crossref",
+      "name": "Crossref",
+      "category": "research-literature",
+      "jurisdiction": "global",
+      "url": "https://www.crossref.org/",
+      "access": "free-public",
+      "automation": "api-preferred",
+      "license_tos": "Check Crossref REST API etiquette and metadata license notes.",
+      "data_types": [
+        "DOIs",
+        "publication metadata",
+        "funders"
+      ],
+      "best_for": "DOI metadata and publication lookup.",
+      "caution": "Metadata is supplied by publishers and may be incomplete.",
+      "personal_data_risk": "low",
+      "evidence_weight": "index",
+      "citation_note": "Cite DOI and publisher record for final claims.",
+      "tags": [
+        "research",
+        "doi",
+        "literature"
+      ]
+    },
+    {
+      "id": "orcid",
+      "name": "ORCID",
+      "category": "research-literature",
+      "jurisdiction": "global",
+      "url": "https://orcid.org/",
+      "access": "free-public",
+      "automation": "api-preferred",
+      "license_tos": "Check ORCID public-data terms and user-control model.",
+      "data_types": [
+        "researcher profiles",
+        "works",
+        "affiliations"
+      ],
+      "best_for": "Researcher identity disambiguation where public records exist.",
+      "caution": "ORCID profiles can be self-maintained and incomplete.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "index",
+      "citation_note": "Cite ORCID ID and public-record retrieval date.",
+      "tags": [
+        "research",
+        "identity",
+        "academia"
+      ]
+    },
+    {
+      "id": "doaj",
+      "name": "Directory of Open Access Journals",
+      "category": "research-literature",
+      "jurisdiction": "global",
+      "url": "https://doaj.org/",
+      "access": "free-public",
+      "automation": "api-preferred",
+      "license_tos": "Check DOAJ data terms.",
+      "data_types": [
+        "journal records",
+        "article metadata"
+      ],
+      "best_for": "Open-access journal and article discovery.",
+      "caution": "Inclusion does not prove article quality or correctness.",
+      "personal_data_risk": "low",
+      "evidence_weight": "index",
+      "citation_note": "Cite DOAJ record and original journal article.",
+      "tags": [
+        "research",
+        "journal",
+        "open-access"
+      ]
+    },
+    {
+      "id": "icij-offshore-leaks",
+      "name": "ICIJ Offshore Leaks Database",
+      "category": "investigative-archives",
+      "jurisdiction": "global",
+      "url": "https://offshoreleaks.icij.org/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Use ICIJ terms and dataset caveats; high reputational risk.",
+      "data_types": [
+        "offshore entities",
+        "intermediaries",
+        "addresses",
+        "leak-derived records"
+      ],
+      "best_for": "Leads on offshore entity networks from ICIJ datasets.",
+      "caution": "Leak presence is not proof of illegality; verify and apply legal/ethics review.",
+      "personal_data_risk": "high",
+      "evidence_weight": "lead-only",
+      "citation_note": "Cite ICIJ database as a lead and explain dataset limitations.",
+      "tags": [
+        "leaks",
+        "offshore",
+        "investigative",
+        "high-risk"
+      ]
+    },
+    {
+      "id": "occrp-aleph",
+      "name": "OCCRP Aleph",
+      "category": "investigative-archives",
+      "jurisdiction": "global",
+      "url": "https://aleph.occrp.org/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check OCCRP/Aleph source-specific terms and document provenance.",
+      "data_types": [
+        "documents",
+        "company data",
+        "watchlists",
+        "leak-derived records"
+      ],
+      "best_for": "Investigative document and entity leads.",
+      "caution": "Source provenance varies; leaked or mirrored data requires legal/ethics review before use.",
+      "personal_data_risk": "high",
+      "evidence_weight": "lead-only",
+      "citation_note": "Cite underlying document/source collection and provenance, not only Aleph.",
+      "tags": [
+        "leaks",
+        "documents",
+        "investigative",
+        "high-risk"
+      ]
+    },
+    {
+      "id": "littlesis",
+      "name": "LittleSis",
+      "category": "political-influence",
+      "jurisdiction": "United States",
+      "url": "https://littlesis.org/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check LittleSis terms and cited references for each relationship.",
+      "data_types": [
+        "people",
+        "organizations",
+        "relationships",
+        "boards",
+        "donors"
+      ],
+      "best_for": "US power-network and relationship leads.",
+      "caution": "Relationships must be verified from cited sources before publication.",
+      "personal_data_risk": "high",
+      "evidence_weight": "index",
+      "citation_note": "Cite original referenced source for relationship claims.",
+      "tags": [
+        "politics",
+        "entity-graph",
+        "relationships",
+        "us"
+      ]
+    },
+    {
+      "id": "opensecrets",
+      "name": "OpenSecrets",
+      "category": "political-finance",
+      "jurisdiction": "United States",
+      "url": "https://www.opensecrets.org/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check OpenSecrets terms and FEC source links.",
+      "data_types": [
+        "campaign finance",
+        "lobbying",
+        "donors",
+        "industries"
+      ],
+      "best_for": "US political money and lobbying analysis.",
+      "caution": "Use exact data definitions; donor identity and employer data can be sensitive.",
+      "personal_data_risk": "high",
+      "evidence_weight": "secondary",
+      "citation_note": "Cite OpenSecrets and, where material, FEC/source record.",
+      "tags": [
+        "politics",
+        "campaign-finance",
+        "us"
+      ]
+    },
+    {
+      "id": "fec-data",
+      "name": "Federal Election Commission Data",
+      "category": "political-finance",
+      "jurisdiction": "United States",
+      "url": "https://www.fec.gov/data/",
+      "access": "free-public",
+      "automation": "api-preferred",
+      "license_tos": "Use FEC API and data terms.",
+      "data_types": [
+        "campaign filings",
+        "contributions",
+        "committees",
+        "expenditures"
+      ],
+      "best_for": "Official US federal campaign-finance records.",
+      "caution": "Names/employers require careful identity matching and privacy minimization.",
+      "personal_data_risk": "high",
+      "evidence_weight": "primary",
+      "citation_note": "Cite committee/report/transaction ID and filing date.",
+      "tags": [
+        "politics",
+        "campaign-finance",
+        "us",
+        "primary-source"
+      ]
+    },
+    {
+      "id": "eu-transparency-register",
+      "name": "EU Transparency Register",
+      "category": "lobbying",
+      "jurisdiction": "European Union",
+      "url": "https://transparency-register.europa.eu/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check EU Transparency Register terms and update dates.",
+      "data_types": [
+        "lobbying registrants",
+        "interests",
+        "spending ranges",
+        "accreditations"
+      ],
+      "best_for": "EU lobbying registrant checks.",
+      "caution": "Self-reported data; validate with meetings, filings, or organizational records.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "primary",
+      "citation_note": "Cite registration number, update date, and declared interests.",
+      "tags": [
+        "lobbying",
+        "eu",
+        "politics"
+      ]
+    },
+    {
+      "id": "lobbyfacts-eu",
+      "name": "LobbyFacts EU",
+      "category": "lobbying",
+      "jurisdiction": "European Union",
+      "url": "https://www.lobbyfacts.eu/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check LobbyFacts terms and underlying Transparency Register records.",
+      "data_types": [
+        "EU lobbying data",
+        "spend trends",
+        "organizations"
+      ],
+      "best_for": "EU lobbying analysis and historical views.",
+      "caution": "Use as analysis/index; verify current facts in official EU Transparency Register.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "secondary",
+      "citation_note": "Cite LobbyFacts and official Transparency Register entry for final facts.",
+      "tags": [
+        "lobbying",
+        "eu",
+        "politics",
+        "index"
+      ]
+    },
+    {
+      "id": "openstreetmap",
+      "name": "OpenStreetMap",
+      "category": "geospatial",
+      "jurisdiction": "global",
+      "url": "https://www.openstreetmap.org/",
+      "access": "free-public",
+      "automation": "api-preferred",
+      "license_tos": "OpenStreetMap data is licensed under ODbL; comply with attribution/share-alike.",
+      "data_types": [
+        "maps",
+        "places",
+        "roads",
+        "points of interest"
+      ],
+      "best_for": "Geospatial context, place identification, local infrastructure leads.",
+      "caution": "Community data can be incomplete or outdated; verify critical facts locally.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "secondary",
+      "citation_note": "Attribute OpenStreetMap contributors and cite retrieval date.",
+      "tags": [
+        "maps",
+        "geospatial",
+        "places"
+      ]
+    },
+    {
+      "id": "nasa-firms",
+      "name": "NASA FIRMS",
+      "category": "geospatial-environment",
+      "jurisdiction": "global",
+      "url": "https://firms.modaps.eosdis.nasa.gov/",
+      "access": "free-public",
+      "automation": "api-preferred",
+      "license_tos": "Check NASA FIRMS data policy and attribution requirements.",
+      "data_types": [
+        "active fire detections",
+        "satellite data"
+      ],
+      "best_for": "Fire/hotspot monitoring and environmental event leads.",
+      "caution": "Satellite detections require interpretation; do not equate every hotspot with confirmed damage.",
+      "personal_data_risk": "low",
+      "evidence_weight": "primary",
+      "citation_note": "Cite satellite/instrument, date/time, and FIRMS source.",
+      "tags": [
+        "satellite",
+        "environment",
+        "fires",
+        "dataset"
+      ]
+    },
+    {
+      "id": "copernicus-browser",
+      "name": "Copernicus Browser",
+      "category": "geospatial-environment",
+      "jurisdiction": "global",
+      "url": "https://browser.dataspace.copernicus.eu/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check Copernicus Data Space terms and dataset license.",
+      "data_types": [
+        "Sentinel imagery",
+        "satellite scenes"
+      ],
+      "best_for": "Satellite imagery review and environmental/geospatial context.",
+      "caution": "Image interpretation requires expertise; record processing choices.",
+      "personal_data_risk": "low",
+      "evidence_weight": "primary",
+      "citation_note": "Cite Sentinel mission, tile/scene, date, and processing.",
+      "tags": [
+        "satellite",
+        "geospatial",
+        "environment"
+      ]
+    },
+    {
+      "id": "usgs-earthexplorer",
+      "name": "USGS EarthExplorer",
+      "category": "geospatial-environment",
+      "jurisdiction": "global",
+      "url": "https://earthexplorer.usgs.gov/",
+      "access": "free-registration",
+      "automation": "manual-first",
+      "license_tos": "Check USGS access and dataset-specific terms.",
+      "data_types": [
+        "Landsat imagery",
+        "remote sensing data"
+      ],
+      "best_for": "Historical satellite imagery and remote-sensing datasets.",
+      "caution": "Registration may be required; interpretation requires caution.",
+      "personal_data_risk": "low",
+      "evidence_weight": "primary",
+      "citation_note": "Cite dataset, scene ID, acquisition date, and processing.",
+      "tags": [
+        "satellite",
+        "geospatial",
+        "environment"
+      ]
+    },
+    {
+      "id": "noaa-ncei",
+      "name": "NOAA National Centers for Environmental Information",
+      "category": "geospatial-environment",
+      "jurisdiction": "United States/global",
+      "url": "https://www.ncei.noaa.gov/",
+      "access": "free-public",
+      "automation": "api-preferred",
+      "license_tos": "Check NOAA data policies and dataset documentation.",
+      "data_types": [
+        "weather",
+        "climate",
+        "oceanographic data"
+      ],
+      "best_for": "Weather, climate, and environmental datasets.",
+      "caution": "Use station/dataset metadata; avoid overclaiming local causality.",
+      "personal_data_risk": "low",
+      "evidence_weight": "primary",
+      "citation_note": "Cite dataset, station/area, time period, and retrieval date.",
+      "tags": [
+        "weather",
+        "climate",
+        "environment",
+        "dataset"
+      ]
+    },
+    {
+      "id": "world-bank-data",
+      "name": "World Bank Open Data",
+      "category": "public-data",
+      "jurisdiction": "global",
+      "url": "https://data.worldbank.org/",
+      "access": "free-public",
+      "automation": "api-preferred",
+      "license_tos": "Check World Bank open-data license and indicator definitions.",
+      "data_types": [
+        "development indicators",
+        "country data",
+        "time series"
+      ],
+      "best_for": "Macroeconomic and development indicators.",
+      "caution": "Indicator definitions and missing data matter; avoid simplistic rankings.",
+      "personal_data_risk": "low",
+      "evidence_weight": "primary",
+      "citation_note": "Cite indicator code, country, year, and retrieval date.",
+      "tags": [
+        "data",
+        "economics",
+        "development"
+      ]
+    },
+    {
+      "id": "un-data",
+      "name": "UNdata",
+      "category": "public-data",
+      "jurisdiction": "global",
+      "url": "https://data.un.org/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check dataset-specific UN data terms.",
+      "data_types": [
+        "international statistics",
+        "demographic/economic indicators"
+      ],
+      "best_for": "UN statistical datasets and country indicators.",
+      "caution": "Dataset freshness varies; record source agency and update date.",
+      "personal_data_risk": "low",
+      "evidence_weight": "primary",
+      "citation_note": "Cite dataset, agency, indicator, year, and retrieval date.",
+      "tags": [
+        "data",
+        "statistics",
+        "un"
+      ]
+    },
+    {
+      "id": "who-data",
+      "name": "WHO Data",
+      "category": "public-health",
+      "jurisdiction": "global",
+      "url": "https://data.who.int/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check WHO data terms and indicator methodology.",
+      "data_types": [
+        "health indicators",
+        "country profiles",
+        "time series"
+      ],
+      "best_for": "Public-health indicators and WHO statistics.",
+      "caution": "Methodology and reporting differences can change interpretation.",
+      "personal_data_risk": "low",
+      "evidence_weight": "primary",
+      "citation_note": "Cite indicator, country, period, and retrieval date.",
+      "tags": [
+        "health",
+        "data",
+        "who"
+      ]
+    },
+    {
+      "id": "oecd-data-explorer",
+      "name": "OECD Data Explorer",
+      "category": "public-data",
+      "jurisdiction": "OECD/global",
+      "url": "https://data-explorer.oecd.org/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check OECD data terms and dataset notes.",
+      "data_types": [
+        "economic indicators",
+        "social indicators",
+        "country series"
+      ],
+      "best_for": "OECD comparative indicators and datasets.",
+      "caution": "Compare like with like; definitions can change across countries/years.",
+      "personal_data_risk": "low",
+      "evidence_weight": "primary",
+      "citation_note": "Cite dataset, indicator, country, year, and retrieval date.",
+      "tags": [
+        "data",
+        "economics",
+        "oecd"
+      ]
+    },
+    {
+      "id": "imf-data",
+      "name": "IMF Data",
+      "category": "public-data",
+      "jurisdiction": "global",
+      "url": "https://www.imf.org/en/Data",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check IMF data terms and dataset methodology.",
+      "data_types": [
+        "macroeconomic data",
+        "financial indicators",
+        "country data"
+      ],
+      "best_for": "IMF macroeconomic and financial datasets.",
+      "caution": "Forecasts and estimates differ from observed data; label clearly.",
+      "personal_data_risk": "low",
+      "evidence_weight": "primary",
+      "citation_note": "Cite dataset, indicator, country, period, and retrieval date.",
+      "tags": [
+        "data",
+        "economics",
+        "imf"
+      ]
+    },
+    {
+      "id": "adsb-exchange",
+      "name": "ADS-B Exchange Globe",
+      "category": "transport-aircraft",
+      "jurisdiction": "global",
+      "url": "https://globe.adsbexchange.com/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check ADS-B Exchange terms; aircraft tracking can be safety/privacy sensitive.",
+      "data_types": [
+        "aircraft positions",
+        "flight tracks",
+        "Mode-S identifiers"
+      ],
+      "best_for": "Aircraft movement leads and public ADS-B observation.",
+      "caution": "High privacy/security sensitivity; avoid doxxing or live operational harm.",
+      "personal_data_risk": "high",
+      "evidence_weight": "lead-only",
+      "citation_note": "Cite only when public-interest and safety review justify it; archive cautiously.",
+      "tags": [
+        "aircraft",
+        "transport",
+        "high-risk"
+      ]
+    },
+    {
+      "id": "opensky-network",
+      "name": "OpenSky Network",
+      "category": "transport-aircraft",
+      "jurisdiction": "global",
+      "url": "https://opensky-network.org/",
+      "access": "mixed",
+      "automation": "api-preferred",
+      "license_tos": "Check OpenSky API and data terms; account/rate limits may apply.",
+      "data_types": [
+        "aircraft state vectors",
+        "flight traces"
+      ],
+      "best_for": "Historical/near-real-time aircraft movement research.",
+      "caution": "Coverage varies; sensitive movement data requires safety review.",
+      "personal_data_risk": "high",
+      "evidence_weight": "lead-only",
+      "citation_note": "Cite dataset/API query parameters and time window.",
+      "tags": [
+        "aircraft",
+        "transport",
+        "dataset",
+        "high-risk"
+      ]
+    },
+    {
+      "id": "faa-aircraft-registry",
+      "name": "FAA Aircraft Registry",
+      "category": "transport-aircraft",
+      "jurisdiction": "United States",
+      "url": "https://registry.faa.gov/aircraftinquiry/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check FAA registry use terms.",
+      "data_types": [
+        "aircraft registrations",
+        "N-numbers",
+        "owners"
+      ],
+      "best_for": "US aircraft registration checks.",
+      "caution": "Ownership records may involve addresses or trusts; minimize personal data.",
+      "personal_data_risk": "high",
+      "evidence_weight": "primary",
+      "citation_note": "Cite N-number, serial, registration date, and retrieval date.",
+      "tags": [
+        "aircraft",
+        "transport",
+        "us",
+        "registry"
+      ]
+    },
+    {
+      "id": "imo-gisis",
+      "name": "IMO GISIS",
+      "category": "transport-maritime",
+      "jurisdiction": "global",
+      "url": "https://gisis.imo.org/",
+      "access": "free-registration",
+      "automation": "manual-first",
+      "license_tos": "Check IMO GISIS account and database terms.",
+      "data_types": [
+        "ship particulars",
+        "company data",
+        "maritime incidents depending on module"
+      ],
+      "best_for": "Official IMO maritime data modules where accessible.",
+      "caution": "Registration and module-specific access limits apply; do not scrape login areas.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "primary",
+      "citation_note": "Cite IMO number/module and retrieval date.",
+      "tags": [
+        "ships",
+        "maritime",
+        "transport"
+      ]
+    },
+    {
+      "id": "equasis",
+      "name": "Equasis",
+      "category": "transport-maritime",
+      "jurisdiction": "global",
+      "url": "https://www.equasis.org/",
+      "access": "free-registration",
+      "automation": "manual-first",
+      "license_tos": "Check Equasis terms and account rules.",
+      "data_types": [
+        "ship particulars",
+        "company/operator data",
+        "inspection leads"
+      ],
+      "best_for": "Ship identity and maritime-company leads.",
+      "caution": "Free login terms apply; verify with flag/class/port-state records.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "index",
+      "citation_note": "Cite Equasis record and corroborating official maritime source where possible.",
+      "tags": [
+        "ships",
+        "maritime",
+        "transport",
+        "index"
+      ]
+    },
+    {
+      "id": "crtsh",
+      "name": "crt.sh",
+      "category": "internet-infrastructure",
+      "jurisdiction": "global",
+      "url": "https://crt.sh/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Check crt.sh usage expectations; data comes from certificate transparency logs.",
+      "data_types": [
+        "certificate transparency",
+        "domains",
+        "subdomains",
+        "issuers"
+      ],
+      "best_for": "Domain/subdomain and certificate-history leads.",
+      "caution": "Certificate presence does not prove website control or active use.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "index",
+      "citation_note": "Cite certificate ID/log entry and timestamp; corroborate domain control.",
+      "tags": [
+        "domains",
+        "certificates",
+        "infrastructure"
+      ]
+    },
+    {
+      "id": "icann-lookup",
+      "name": "ICANN Lookup",
+      "category": "internet-infrastructure",
+      "jurisdiction": "global",
+      "url": "https://lookup.icann.org/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Use ICANN lookup terms and RDAP/WHOIS data minimization.",
+      "data_types": [
+        "domain registration",
+        "registrars",
+        "nameservers",
+        "RDAP fields"
+      ],
+      "best_for": "Domain registration and registrar leads.",
+      "caution": "RDAP/WHOIS data may be redacted and privacy-sensitive.",
+      "personal_data_risk": "high",
+      "evidence_weight": "primary",
+      "citation_note": "Cite domain, registrar, RDAP field, and retrieval date.",
+      "tags": [
+        "domains",
+        "whois",
+        "internet",
+        "primary-source"
+      ]
+    },
+    {
+      "id": "rdap-bootstrap",
+      "name": "RDAP Bootstrap",
+      "category": "internet-infrastructure",
+      "jurisdiction": "global",
+      "url": "https://data.iana.org/rdap/",
+      "access": "free-public",
+      "automation": "manual-first",
+      "license_tos": "Use IANA/RDAP endpoints and registry terms.",
+      "data_types": [
+        "RDAP service endpoints",
+        "domain/IP registration references"
+      ],
+      "best_for": "Finding authoritative RDAP services for domains/IPs.",
+      "caution": "It routes to sources; it does not itself prove registrant facts.",
+      "personal_data_risk": "medium",
+      "evidence_weight": "index",
+      "citation_note": "Cite final RDAP authority for substantive claims.",
+      "tags": [
+        "domains",
+        "rdap",
+        "internet",
+        "index"
+      ]
+    },
+    {
+      "id": "censys-search",
+      "name": "Censys Search",
+      "category": "internet-infrastructure",
+      "jurisdiction": "global",
+      "url": "https://search.censys.io/",
+      "access": "mixed",
+      "automation": "manual-first",
+      "license_tos": "Check Censys terms, account/rate limits, and acceptable use.",
+      "data_types": [
+        "internet hosts",
+        "certificates",
+        "services"
+      ],
+      "best_for": "Internet-exposure and infrastructure leads.",
+      "caution": "Security-sensitive; avoid enabling harm or publishing exploit-enabling details.",
+      "personal_data_risk": "high",
+      "evidence_weight": "lead-only",
+      "citation_note": "Cite cautiously and minimize operational details.",
+      "tags": [
+        "infrastructure",
+        "security",
+        "domains",
+        "high-risk"
+      ]
+    }
+  ]
+}

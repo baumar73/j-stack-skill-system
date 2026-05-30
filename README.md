@@ -1,6 +1,6 @@
 # J-Stack — GBrain-Integrated Journalism Skills for Hermes Agent
 
-Status: **published public MIT skill collection** with J-Stack v1.2 country/jurisdiction intake and v1.1 US-context overlay; not automatically installed into any active Hermes profile.
+Status: **published public MIT skill collection** with J-Stack v1.2 country/jurisdiction intake, v1.1 US-context overlay, and a v0.2 draft OSINT Source Atlas; not automatically installed into any active Hermes profile.
 Generated: 2026-05-28T10:30:07+00:00  
 Published: 2026-05-29T11:33:47+00:00  
 Owner: Markus Bauer / J-Stack contributors
@@ -51,16 +51,23 @@ Use [`references/country-context-intake.md`](./references/country-context-intake
 
 ## J-Stack v1.1 — US Publication Context Overlay
 
-The second public version adds a United States context layer across all 26 skills. Use [`references/us-publication-context.md`](./references/us-publication-context.md) whenever the publication, source, subject, audience, platform, author, evidence, or likely dispute forum has a US nexus.
+The second public version adds a United States context layer across all 27 skills. Use [`references/us-publication-context.md`](./references/us-publication-context.md) whenever the publication, source, subject, audience, platform, author, evidence, or likely dispute forum has a US nexus.
 
 The US layer is broader than a German `Gelegenheit zur Stellungnahme` gate. It forces the workflow to classify federal/state jurisdiction, First Amendment posture, public official/public figure/private figure status, actual-malice or negligence issues, fact-vs-opinion boundaries, public-record/fair-report posture, anti-SLAPP and retraction questions, privacy torts, source-protection and recording/access rules, copyright/fair-use/DMCA, FTC/platform disclosures, election/securities sensitivities, and local-counsel needs.
 
 J-Stack does **not** claim US legal compliance. The overlay is a safety checklist that prevents German/EU assumptions from being treated as sufficient for US publication risk.
 
+
+## J-Stack v0.2 draft — OSINT Source Atlas
+
+The current development branch adds a curated OSINT Source Atlas in [`sources/osint-sources.json`](./sources/osint-sources.json), with schema [`sources/osint-sources.schema.json`](./sources/osint-sources.schema.json). The atlas is a source-routing aid, not permission to scrape or bypass access controls. Each source entry records category, jurisdiction, URL, access model, automation boundary, terms/license warning, data types, evidence weight, personal-data risk, citation notes, and tags.
+
+Use the new `jstack-osint-source-router` skill before live OSINT collection to select lawful sources, distinguish primary evidence from indexes and lead-only databases, and route results to claim/evidence ledgers.
+
 ## Skill Families
 
 - Editorial command: command center, office hours, editorial line, assignment desk.
-- Research: source map, primary-source research, OSINT, data journalism, interview prep, document review, investigation.
+- Research: source map, OSINT source router, primary-source research, OSINT, data journalism, interview prep, document review, investigation.
 - Facts and claims: claim ledger, evidence ledger, entity graph, timeline, countercase.
 - Safety: legal risk, ethics check, red-team, ship gate.
 - Writing and distribution: draft, copy desk, SEO/distribution, social package.
@@ -70,6 +77,7 @@ J-Stack does **not** claim US legal compliance. The overlay is a safety checklis
 
 - [`examples/jstack-data-journalism/`](./examples/jstack-data-journalism/) shows a fictional, non-sensitive data-journalism workflow: toy CSV, reproducible calculation, findings table, limitations, safe claim wording, and next J-Stack routing.
 - [`examples/jstack-seo-distribution/`](./examples/jstack-seo-distribution/) shows a fictional, non-sensitive SEO/distribution workflow: claim-bounded story brief, search-intent map, metadata, landing-page outline, newsletter teaser, headline-vs-evidence check, and metadata length/safety script.
+- [`examples/jstack-osint-source-router/`](./examples/jstack-osint-source-router/) shows a fictional, non-sensitive source-routing workflow: seed atlas validation, source classes, evidence weights, access/automation warnings, personal-data risk, and next J-Stack routing.
 
 ## Recommended Story Flow
 
@@ -77,17 +85,18 @@ J-Stack does **not** claim US legal compliance. The overlay is a safety checklis
 2. `jstack-editorial-line`
 3. `jstack-command-center`
 4. `jstack-source-map`
-5. `jstack-investigate`
-6. `jstack-claim-ledger`
-7. `jstack-countercase`
-8. `jstack-legal-risk`
-9. `jstack-ethics-check`
-10. `jstack-draft`
-11. `jstack-copy-desk`
-12. `jstack-redteam`
-13. `jstack-ship`
-14. `jstack-social-package`
-15. `jstack-postpub`
+5. `jstack-osint-source-router`
+6. `jstack-investigate`
+7. `jstack-claim-ledger`
+8. `jstack-countercase`
+9. `jstack-legal-risk`
+10. `jstack-ethics-check`
+11. `jstack-draft`
+12. `jstack-copy-desk`
+13. `jstack-redteam`
+14. `jstack-ship`
+15. `jstack-social-package`
+16. `jstack-postpub`
 
 ## Tested Environment and Technical Requirements
 
@@ -98,7 +107,7 @@ J-Stack is a **Hermes Agent skill collection**, not a standalone application. Th
 - **Agent runtime:** Hermes Agent with `SKILL.md` skill support.
 - **Reference model / AI stack:** authored and tested in a Linux-based Hermes Agent / Codex-5.5-class coding and reasoning workflow. J-Stack is not hard-bound to one model version, but other runtimes or weaker models may produce different results.
 - **Operating system:** Linux is the tested reference environment. macOS should work for ordinary Markdown skill use. Windows is not the primary tested environment; use WSL/Linux when shell scripts, validation commands, or Git workflows are required.
-- **Knowledge layer:** GBrain is strongly recommended for full newsroom-memory workflows, including source maps, claim ledgers, timelines, entity graphs, corrections, and post-publication memory. Individual skills can still be read and followed manually without GBrain.
+- **Knowledge layer:** GBrain is strongly recommended for full newsroom-memory workflows, including source maps, OSINT source plans, claim ledgers, timelines, entity graphs, corrections, and post-publication memory. Individual skills can still be read and followed manually without GBrain.
 - **Local maintenance tools:** `git`; optionally `python3` for validation scripts, JSON/manifest checks, and repository QA.
 
 J-Stack does **not** provide a hosted model, newsroom CMS, secure confidential-data environment, legal/compliance approval process, source-protection infrastructure, or production deployment. Those technical and organizational controls must be supplied, reviewed, and documented by the user before real-world use.
@@ -119,6 +128,7 @@ This is a public MIT-licensed skill package. To install, copy selected `skills/<
 - Country/jurisdiction context must be confirmed at the start or explicitly marked `COUNTRY_CONTEXT_UNCLEAR` with a blocking open question.
 - No automatic publishing.
 - No source contact without approval.
+- No automated collection from OSINT/public-record sources until access, license/terms, rate limits, personal-data risk, and safety boundaries are reviewed.
 - No invented citations.
 - No secrets in GBrain.
 - No secrets, tokens, API keys, credentials, or provider logs in the repository or issue reports.

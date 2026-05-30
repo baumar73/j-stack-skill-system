@@ -9,7 +9,7 @@ This package is a public MIT-licensed GBrain-integrated journalism skill collect
 
 ## Current Status
 
-- Skills created: 26
+- Skills created: 27
 - Core skill target: 95+
 - Helper target: 90+
 - Current package status: **published public MIT collection after second hardening pass plus v1.2 country/jurisdiction intake and v1.1 US-context overlay**
@@ -23,10 +23,11 @@ This package is a public MIT-licensed GBrain-integrated journalism skill collect
 - GBrain integration included in every skill.
 - Explicit source/evidence discipline.
 - Legal/ethical safety gates.
-- Country/jurisdiction intake across all 26 skills: mandatory first question, country-context labels, multi-jurisdiction routing, and local-review escalation before publication-ready status.
-- US-context overlay across all 26 skills: federal/state jurisdiction, First Amendment, defamation, privacy torts, anti-SLAPP, source protection, recording/access, copyright/fair use, FTC/platform, and local-counsel escalation.
+- Country/jurisdiction intake across all 27 skills: mandatory first question, country-context labels, multi-jurisdiction routing, and local-review escalation before publication-ready status.
+- US-context overlay across all 27 skills: federal/state jurisdiction, First Amendment, defamation, privacy torts, anti-SLAPP, source protection, recording/access, copyright/fair use, FTC/platform, and local-counsel escalation.
 - Garry Tan / GStack inspiration credited without false affiliation.
 - No external action automation.
+- v0.2 draft OSINT Source Atlas separates source discovery from live collection and labels access, automation, evidence weight, and personal-data risk.
 
 ## Remaining Human Decisions
 
@@ -34,8 +35,8 @@ This package is a public MIT-licensed GBrain-integrated journalism skill collect
 - Decide whether to install selected skills into an active Hermes profile.
 - Human legal review before branding the legal-risk material as suitable for public professional use, especially for US state-specific publication, source-protection, anti-SLAPP, privacy, copyright/fair-use, and platform-policy questions.
 - Human compliance/security review before using J-Stack with real confidential, source-sensitive, client, personal, or regulated data.
-- Optional: add real worked examples from a non-sensitive public story; both previously lowest helper skills (`jstack-data-journalism` and `jstack-seo-distribution`) now have fictional non-sensitive worked examples.
+- Optional: add real worked examples from a non-sensitive public story; the current worked examples remain fictional and non-sensitive, including the OSINT source-router example.
 
 ## Recommendation
 
-Proceed to human editorial/legal review before treating the legal-risk material as professional advice, tag a GitHub release if desired, or add real-world non-sensitive worked examples later. Do not install into an active Hermes profile until Markus explicitly approves.
+Proceed to human editorial/legal review before treating the legal-risk material as professional advice, tag a future GitHub release if desired, review/expand the OSINT Source Atlas, or add real-world non-sensitive worked examples later. Do not install into an active Hermes profile until Markus explicitly approves.

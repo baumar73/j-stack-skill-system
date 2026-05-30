@@ -26,7 +26,7 @@ python3 examples/jstack-seo-distribution/metadata-length-check.py
 
 A clean release should show:
 
-- 26 skills.
+- 27 skills.
 - 0 validation errors.
 - 0 hardening blockers / important issues / nits.
 - SEO metadata example PASS.

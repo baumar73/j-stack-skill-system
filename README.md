@@ -103,9 +103,16 @@ J-Stack is a **Hermes Agent skill collection**, not a standalone application. Th
 
 J-Stack does **not** provide a hosted model, newsroom CMS, secure confidential-data environment, legal/compliance approval process, source-protection infrastructure, or production deployment. Those technical and organizational controls must be supplied, reviewed, and documented by the user before real-world use.
 
+## Release and Getting Started
+
+- [`GETTING_STARTED.md`](./GETTING_STARTED.md) explains the recommended first-read path, validation commands, and safe pilot sequence.
+- [`INSTALL.md`](./INSTALL.md) describes cautious installation/pilot use for Hermes Agent profiles.
+- [`CHANGELOG.md`](./CHANGELOG.md) tracks repository release changes.
+- [`RELEASE_NOTES_v0.1.0.md`](./RELEASE_NOTES_v0.1.0.md) describes the first public release package.
+
 ## Installation
 
-This is a public MIT-licensed skill package. To install, copy selected `skills/<skill>/` directories into a Hermes skill source or consume the repository through the Hermes skills workflow. Do not install globally into production workflows until reviewed for your use case.
+This is a public MIT-licensed skill package. To install, copy selected `skills/<skill>/` directories into a reviewed Hermes skill source or consume the repository through the Hermes skills workflow. Prefer a small non-production pilot before activating a broad surface. Do not install globally into production workflows until reviewed for your use case.
 
 ## Safety Defaults
 

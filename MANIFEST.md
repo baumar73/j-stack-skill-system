@@ -2,7 +2,7 @@
 
 Generated: 2026-05-28T10:30:07+00:00
 
-Status: public MIT skill collection with J-Stack v1.1 US-context overlay.
+Status: public MIT skill collection with J-Stack v1.2 country/jurisdiction intake and v1.1 US-context overlay.
 
 Published: 2026-05-29T11:33:47+00:00.
 
@@ -13,6 +13,7 @@ Last hardened: 2026-05-28T11:08:22+00:00.
 - `VALIDATION.json` — latest deterministic skill validation, 26 skills, 0 errors.
 - `HARDENING-AUDIT.json` — second-pass hardening audit, 0 blockers, 0 important issues, 0 nits.
 - `DISCLAIMER.md` — public disclaimer and use notice for experimental skills, no legal/compliance/security advice, no warranty, human approval, data protection, professional secrecy, AI-governance, and secrets hygiene.
+- `references/country-context-intake.md` — mandatory first-gate country/jurisdiction intake applied across all 26 skills: country, subnational forum, publication venue, platform, audience, subject/source/evidence location, multi-jurisdiction routing, and local-review escalation.
 - `references/us-publication-context.md` — United States publication-safety overlay applied across all 26 skills: federal/state jurisdiction, First Amendment, defamation, privacy torts, anti-SLAPP, source protection, recording/access, copyright/fair use, FTC/platform rules, and local-counsel escalation.
 - `REDTEAM-HARDENING-REPORT.md` — human-readable second-pass review summary.
 - `scripts/validate_jstack.py` — frontmatter/structure validator.

@@ -24,6 +24,7 @@ Generated: 2026-05-28T10:30:07+00:00
 A story cannot be marked `PUBLICATION_READY` unless:
 
 - mission brief exists;
+- country/jurisdiction context is confirmed under `references/country-context-intake.md`, or marked `COUNTRY_CONTEXT_UNCLEAR` / `LOCAL_REVIEW_REQUIRED` with publication blocked;
 - editorial line is explicit or intentionally neutral;
 - source map exists;
 - claim ledger covers all factual claims;
@@ -51,6 +52,10 @@ A story cannot be marked `PUBLICATION_READY` unless:
 - **Green:** Can be stated as fact with citation.
 - **Yellow:** Use cautious wording; mark as allegation, report, assertion, analysis, or unresolved.
 - **Red:** Do not publish as factual claim; remove, investigate further, or legal review required.
+
+## Country/Jurisdiction Intake Gate
+
+Before a J-Stack workflow leaves the mission stage, it must record a country-context label from `references/country-context-intake.md`. If the user did not specify a country, ask the mandatory first question. `COUNTRY_CONTEXT_UNCLEAR`, unresolved multi-jurisdiction issues, or material local-law uncertainty require `LOCAL_REVIEW_REQUIRED`, `LEGAL_REVIEW_REQUIRED`, or `NOT_READY`, not `PUBLICATION_READY`.
 
 ## US Edition v1.1 Gate
 

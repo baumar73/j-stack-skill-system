@@ -8,18 +8,20 @@ J-Stack is a modular newsroom operating system for Hermes skills. Each skill rep
 
 ## System Layers
 
-1. **Mission layer** — define public interest, audience, artifact type, editorial line, falsification standard.
-2. **Research layer** — source map, primary sources, OSINT, data, interviews, documents.
-3. **Evidence layer** — claim ledger, evidence ledger, entity graph, timeline, countercase.
-4. **Safety layer** — legal risk, ethics, red-team, ship gate.
-5. **Production layer** — drafting, copy desk, SEO, social package.
-6. **Memory layer** — GBrain import, links, tags, timeline, post-publication updates.
+1. **Country-context layer** — ask and record which country/countries, subnational jurisdiction, publication venue, platform, audience, subject/source/evidence location, and likely dispute forum govern the work.
+2. **Mission layer** — define public interest, audience, artifact type, editorial line, falsification standard.
+3. **Research layer** — source map, primary sources, OSINT, data, interviews, documents.
+4. **Evidence layer** — claim ledger, evidence ledger, entity graph, timeline, countercase.
+5. **Safety layer** — legal risk, ethics, red-team, ship gate.
+6. **Production layer** — drafting, copy desk, SEO, social package.
+7. **Memory layer** — GBrain import, links, tags, timeline, post-publication updates.
 
 ## Skill Interface Contract
 
 Each skill should accept:
 
 - story slug / working title;
+- country/jurisdiction intake result from `references/country-context-intake.md`;
 - mission brief or upstream artifact;
 - links to GBrain pages or workspace files;
 - language, jurisdiction, publication venue, sensitivity;
@@ -27,6 +29,7 @@ Each skill should accept:
 
 Each skill should return:
 
+- country context label and jurisdiction findings;
 - artifact status;
 - key decisions/findings;
 - evidence/risk labels where relevant;

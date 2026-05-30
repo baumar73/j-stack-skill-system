@@ -4,6 +4,8 @@
 - Draft section/headline/social snippet:
 - Risk type: defamation/libel, Verdachtsberichterstattung, US First Amendment/defamation/privacy/anti-SLAPP/fair-use/source-protection, privacy, copyright, data protection, active litigation, platform policy, other.
 - Jurisdiction:
+- Country context label: COUNTRY_CONTEXT_CONFIRMED / COUNTRY_CONTEXT_MULTI_JURISDICTION / COUNTRY_CONTEXT_UNCLEAR / COUNTRY_CONTEXT_NOT_RELEVANT / LOCAL_REVIEW_REQUIRED
+- Primary country/countries / subnational jurisdiction / likely forum:
 - US context label: US_CONTEXT_NOT_REQUIRED / US_CONTEXT_APPLIES / US_STATE_LAW_UNCLEAR / US_LOCAL_COUNSEL_REQUIRED
 - US state(s) / federal forum / likely plaintiff forum:
 - US subject status: public official / public figure / limited-purpose public figure / private figure / corporation / government body / group / unclear

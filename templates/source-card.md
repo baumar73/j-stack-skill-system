@@ -1,6 +1,9 @@
 # Source Card
 
 - Source ID:
+- Primary country/countries:
+- Country context label: COUNTRY_CONTEXT_CONFIRMED / COUNTRY_CONTEXT_MULTI_JURISDICTION / COUNTRY_CONTEXT_UNCLEAR / COUNTRY_CONTEXT_NOT_RELEVANT / LOCAL_REVIEW_REQUIRED
+- Subnational jurisdiction / forum:
 - Title:
 - URL / citation:
 - Issuer / author:

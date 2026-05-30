@@ -1,6 +1,13 @@
 # Editorial Mission Brief
 
 - Story slug:
+- Primary country/countries:
+- Country context label: COUNTRY_CONTEXT_CONFIRMED / COUNTRY_CONTEXT_MULTI_JURISDICTION / COUNTRY_CONTEXT_UNCLEAR / COUNTRY_CONTEXT_NOT_RELEVANT / LOCAL_REVIEW_REQUIRED
+- Subnational jurisdiction / forum:
+- Publication venue / platform:
+- Primary audience:
+- Subject/source/evidence location:
+- Applicable context references:
 - Working thesis:
 - Reader:
 - Public interest:

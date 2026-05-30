@@ -1,6 +1,10 @@
 # Ship Gate Report
 
 - Story:
+- Primary country/countries:
+- Country context label: COUNTRY_CONTEXT_CONFIRMED / COUNTRY_CONTEXT_MULTI_JURISDICTION / COUNTRY_CONTEXT_UNCLEAR / COUNTRY_CONTEXT_NOT_RELEVANT / LOCAL_REVIEW_REQUIRED
+- Subnational jurisdiction / likely forum:
+- Publication venue / platform:
 - Status: NOT_READY / RESEARCH_READY / DRAFT_READY / LEGAL_REVIEW_REQUIRED / PUBLICATION_READY / APPROVED_TO_PUBLISH
 - Mission answered:
 - Source map complete:

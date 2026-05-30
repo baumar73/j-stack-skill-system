@@ -1,7 +1,7 @@
 ---
 name: jstack-entity-graph
 description: Use when mapping people, organizations, publications, domains, funders, locations, aliases, relationships, and confidence levels in a story or investigation.
-version: 1.1.0
+version: 1.2.0
 author: J-Stack project for Hermes Agent
 license: MIT
 metadata:
@@ -21,6 +21,12 @@ J-Stack treats journalism as a transparent production system: a story moves from
 Core law:
 
 > No public claim ships above its evidence grade. Strong opinion is allowed; weak factual basis is not.
+
+## Country/Jurisdiction Intake — First Gate
+
+Before using this skill for substantive research or publication-risk work, identify the primary country context. If the user has not specified it, ask: "Which country or countries should this research and publication-risk review be assessed under?" Record primary country, relevant subnational jurisdiction, publication venue, audience, subject/source/evidence location, and likely dispute forum. If unclear, mark `COUNTRY_CONTEXT_UNCLEAR` and avoid publication-ready conclusions until clarified.
+
+Use `references/country-context-intake.md` as the routing reference. If the answer includes the United States, also apply `references/us-publication-context.md`; if multiple countries are involved, mark `COUNTRY_CONTEXT_MULTI_JURISDICTION` and split the analysis.
 
 ## US Edition v1.1 — Jurisdiction Overlay
 
@@ -49,6 +55,7 @@ Treat request-for-comment as a US fairness and risk-mitigation practice, not as 
 
 ## Inputs
 
+- Country/jurisdiction context: primary country/countries, subnational jurisdiction, publication venue/platform, audience, and likely dispute forum.
 - Story slug or working title.
 - Editorial Mission Brief, if available.
 - Existing GBrain story/source/claim pages, if available.
@@ -121,6 +128,7 @@ If GBrain is unavailable, write the same artifacts as Markdown under the story w
 # jstack-entity-graph Output
 
 - Story / slug:
+- Country / jurisdiction context:
 - Artifact type:
 - Status:
 - Key findings or decisions:
@@ -139,6 +147,7 @@ If GBrain is unavailable, write the same artifacts as Markdown under the story w
 
 ## Verification Checklist
 
+- [ ] Country/jurisdiction context is confirmed or marked `COUNTRY_CONTEXT_UNCLEAR` with a blocking open question.
 - [ ] Objective and artifact type are explicit.
 - [ ] Evidence grade is not overstated.
 - [ ] Facts, interpretation, thesis, and rhetoric are separated.

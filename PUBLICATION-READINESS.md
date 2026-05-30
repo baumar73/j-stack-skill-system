@@ -12,7 +12,7 @@ This package is a public MIT-licensed GBrain-integrated journalism skill collect
 - Skills created: 26
 - Core skill target: 95+
 - Helper target: 90+
-- Current package status: **published public MIT collection after second hardening pass plus v1.1 US-context overlay**
+- Current package status: **published public MIT collection after second hardening pass plus v1.2 country/jurisdiction intake and v1.1 US-context overlay**
 - Latest validation: **0 errors** (`VALIDATION.json`)
 - Latest hardening audit: **0 blockers / 0 important issues / 0 nits** (`HARDENING-AUDIT.json`)
 - Public disclaimer: **added** (`DISCLAIMER.md`) and linked prominently from `README.md`
@@ -23,6 +23,7 @@ This package is a public MIT-licensed GBrain-integrated journalism skill collect
 - GBrain integration included in every skill.
 - Explicit source/evidence discipline.
 - Legal/ethical safety gates.
+- Country/jurisdiction intake across all 26 skills: mandatory first question, country-context labels, multi-jurisdiction routing, and local-review escalation before publication-ready status.
 - US-context overlay across all 26 skills: federal/state jurisdiction, First Amendment, defamation, privacy torts, anti-SLAPP, source protection, recording/access, copyright/fair use, FTC/platform, and local-counsel escalation.
 - Garry Tan / GStack inspiration credited without false affiliation.
 - No external action automation.

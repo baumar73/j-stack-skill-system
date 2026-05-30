@@ -1,6 +1,6 @@
 # J-Stack — GBrain-Integrated Journalism Skills for Hermes Agent
 
-Status: **published public MIT skill collection** with J-Stack v1.1 US-context overlay; not automatically installed into any active Hermes profile.
+Status: **published public MIT skill collection** with J-Stack v1.2 country/jurisdiction intake and v1.1 US-context overlay; not automatically installed into any active Hermes profile.
 Generated: 2026-05-28T10:30:07+00:00  
 Published: 2026-05-29T11:33:47+00:00  
 Owner: Markus Bauer / J-Stack contributors
@@ -42,6 +42,12 @@ J-Stack is designed to use **GBrain** as the newsroom memory and knowledge graph
 
 > No public claim ships above its evidence grade.  
 > Strong opinion is allowed; weak factual basis is not.
+
+## J-Stack v1.2 — Country and Jurisdiction Intake
+
+The current public version adds a mandatory first gate: before research, drafting, legal-risk review, or ship status, J-Stack must identify the country context. If the country is not explicit, ask: **"Which country or countries should this research and publication-risk review be assessed under?"**
+
+Use [`references/country-context-intake.md`](./references/country-context-intake.md) to record the primary country/countries, relevant state/province/federal-state/city/court/agency context, publication venue, platform, audience, subject/source/evidence location, and likely dispute forum. If the answer is unclear, mark `COUNTRY_CONTEXT_UNCLEAR` and do not call the work `PUBLICATION_READY`.
 
 ## J-Stack v1.1 — US Publication Context Overlay
 
@@ -98,6 +104,7 @@ This is a public MIT-licensed skill package. To install, copy selected `skills/<
 
 ## Safety Defaults
 
+- Country/jurisdiction context must be confirmed at the start or explicitly marked `COUNTRY_CONTEXT_UNCLEAR` with a blocking open question.
 - No automatic publishing.
 - No source contact without approval.
 - No invented citations.

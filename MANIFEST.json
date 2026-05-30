@@ -2,7 +2,7 @@
   "name": "j-stack-skill-system",
   "display_name": "J-Stack",
   "generated_at": "2026-05-28T10:30:07+00:00",
-  "status": "published-public-mit-us-v1.1",
+  "status": "published-public-mit-country-v1.2-us-v1.1",
   "us_context_overlay": "references/us-publication-context.md",
   "inspiration": "Garry Tan / GStack-style operational skills; no affiliation or endorsement implied.",
   "gbrain": "Designed to use GBrain as newsroom memory, source graph, claim ledger, timeline, and publication record.",
@@ -197,6 +197,7 @@
     "GBRAIN-INTEGRATION.md",
     "QUALITY-GATES.md",
     "PUBLICATION-READINESS.md",
+    "references/country-context-intake.md",
     "references/us-publication-context.md",
     "MANIFEST.md",
     "MANIFEST.json",
@@ -212,5 +213,6 @@
   "last_hardened_at": "2026-05-28T11:08:22+00:00",
   "published_at": "2026-05-29T11:33:47+00:00",
   "license": "MIT",
-  "repository": "https://github.com/baumar73/j-stack-skill-system"
+  "repository": "https://github.com/baumar73/j-stack-skill-system",
+  "country_context_intake": "references/country-context-intake.md"
 }

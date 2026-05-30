@@ -18,6 +18,7 @@ except Exception:  # pragma: no cover - fallback for minimal environments
 
 ROOT = Path(__file__).resolve().parents[1]
 TEXT_SUFFIXES = {".md", ".json", ".csv", ".py", ".txt", ".yml", ".yaml"}
+EXCLUDED_PATH_PARTS = {".git", "__pycache__", ".pytest_cache", ".mypy_cache", ".ruff_cache"}
 REQUIRED_TOP_LEVEL = [
     "README.md",
     "ARCHITECTURE.md",
@@ -81,7 +82,11 @@ def add_issue(issues: list[dict], severity: str, path: str, issue: str) -> None:
 def main() -> int:
     issues: list[dict] = []
     skills: list[dict] = []
-    files = [p for p in ROOT.rglob("*") if p.is_file()]
+    files = [
+        p
+        for p in ROOT.rglob("*")
+        if p.is_file() and not (set(p.relative_to(ROOT).parts) & EXCLUDED_PATH_PARTS)
+    ]
 
     for required in REQUIRED_TOP_LEVEL:
         if not (ROOT / required).exists():

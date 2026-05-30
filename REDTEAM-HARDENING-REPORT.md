@@ -6,7 +6,7 @@ Generated: 2026-05-28T11:08:22+00:00
 
 Second-pass review of the draft J-Stack Hermes skill pack at:
 
-`/srv/agents/hermes/state/workspace/j-stack-skill-system`
+`/srv/agents/hermes/state/workspace/j-stack-skill-system-runtime-20260530T103145Z`
 
 This pass reviewed skill structure, naming polish, GBrain integration signals, human-approval boundaries, manifest consistency, obvious secret patterns, and risky automation language.
 
@@ -57,13 +57,13 @@ None found after hardening.
 
 ### Residual Recommendations
 
-- Add one concrete worked example for `jstack-data-journalism` to raise it from **94/100** to **95+**.
-- Add one concrete worked example for `jstack-seo-distribution` to raise it from **94/100** to **95+**.
-- Run a human editorial/legal review before public release, especially for legal-risk wording and any public professional claims.
-- Do not install, publish, push, or promote this pack from draft status without explicit approval.
+- `jstack-data-journalism` now includes a concrete fictional worked example and is scored **95/100**.
+- `jstack-seo-distribution` now includes a concrete fictional worked example and is scored **95/100**.
+- Run a human editorial/legal review before a formal release or professional-use claim, especially for legal-risk wording and any public professional claims.
+- Do not install into an active Hermes profile, tag a release, push new commits, or run external campaigns without explicit approval.
 
 ## Status
 
-**Validated publish-ready candidate draft after second hardening pass.**
+**Validated public candidate after second hardening pass and helper worked-example hardening.**
 
-Still not installed, not externally published, and not written into Hermes profile/canon paths.
+Published as a public source repository, but still not installed into an active Hermes profile and not written into Hermes profile/canon paths.

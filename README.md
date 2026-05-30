@@ -66,6 +66,11 @@ J-Stack does **not** claim US legal compliance. The overlay is a safety checklis
 - Writing and distribution: draft, copy desk, SEO/distribution, social package.
 - Post-publication and memory: postpub, GBrain memory.
 
+## Worked Examples
+
+- [`examples/jstack-data-journalism/`](./examples/jstack-data-journalism/) shows a fictional, non-sensitive data-journalism workflow: toy CSV, reproducible calculation, findings table, limitations, safe claim wording, and next J-Stack routing.
+- [`examples/jstack-seo-distribution/`](./examples/jstack-seo-distribution/) shows a fictional, non-sensitive SEO/distribution workflow: claim-bounded story brief, search-intent map, metadata, landing-page outline, newsletter teaser, headline-vs-evidence check, and metadata length/safety script.
+
 ## Recommended Story Flow
 
 1. `jstack-office-hours`

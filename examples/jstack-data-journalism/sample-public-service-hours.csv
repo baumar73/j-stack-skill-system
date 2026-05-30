@@ -1,0 +1,7 @@
+branch_id,branch_area,weekday_hours,saturday_hours,sunday_hours,notes
+A1,north,45,5,0,Fictional demonstration row
+A2,north,42,4,0,Fictional demonstration row
+B1,central,50,6,4,Fictional demonstration row
+C1,south,38,0,0,Fictional demonstration row
+C2,south,40,3,0,Fictional demonstration row
+D1,east,36,0,0,Fictional demonstration row

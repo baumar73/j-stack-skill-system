@@ -50,7 +50,7 @@ Core law:
 
 - Legal Risk Register
 - Required fixes
-- Right-of-reply needs
+- Right-of-reply / Gelegenheit zur Stellungnahme needs
 - Legal-review flag
 - Safe wording options
 
@@ -59,8 +59,19 @@ Core law:
 1. Classify risk areas: reputation, privacy, copyright, data, court, active proceeding, platform policy.
 2. Map each risk to claim IDs and wording.
 3. Flag unsupported allegations of crime, corruption, agency, espionage, sanctions evasion, money laundering, sexual misconduct, or intentional deceit.
-4. Require right of reply where fairness demands it.
+4. For adverse claims about identifiable people, companies, institutions, or groups, require a documented pre-publication opportunity to comment before ship status can be green.
 5. Return ship status: no-ship, legal-review-required, publish-after-fixes, or legally lower-risk.
+
+## German Press-Law Gate: Gelegenheit zur Stellungnahme
+
+For German publication contexts, especially **Verdachtsberichterstattung** or other reputation-affecting allegations, J-Stack treats the opportunity to respond before publication as a hard fairness and risk gate:
+
+- Ask whether the affected subject is identifiable directly or indirectly.
+- Send only evidence-backed, concrete allegations/questions; do not ambush with vague accusations.
+- Give a fair deadline under the circumstances and record the deadline, channel, recipient, and exact request text.
+- Track the answer, partial answer, denial, correction, or non-response in the source map, claim ledger, timeline, and legal-risk register.
+- Reflect the response fairly in the draft or explain that no response was received despite a documented request.
+- If the opportunity to comment is needed but missing, mark `LEGAL_REVIEW_REQUIRED` or `NOT_READY`; do not mark `PUBLICATION_READY`.
 
 ## GBrain Integration
 
@@ -139,6 +150,7 @@ If GBrain is unavailable, write the same artifacts as Markdown under the story w
 - [ ] GBrain read/write behavior is clear.
 - [ ] Sensitive information is excluded or minimized.
 - [ ] Output can be reviewed by a skeptical editor.
+- [ ] Required pre-publication `Gelegenheit zur Stellungnahme` / right-of-reply outreach is identified, drafted, or explicitly marked as not required.
 - [ ] No external publication/send/post action is taken without human approval.
 
 ## One-Shot Recipe

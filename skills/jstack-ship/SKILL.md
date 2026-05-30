@@ -59,8 +59,9 @@ Core law:
 1. Verify mission answered and artifact type clear.
 2. Verify every factual claim has evidence grade and safe wording.
 3. Verify countercase, legal risk, ethics, red-team, headline, and social snippets.
-4. Verify GBrain/story record is complete enough for later correction.
-5. Return NOT_READY, RESEARCH_READY, DRAFT_READY, LEGAL_REVIEW_REQUIRED, PUBLICATION_READY, or APPROVED_TO_PUBLISH only if human approval is explicit.
+4. Verify required `Gelegenheit zur Stellungnahme` / right-of-reply outreach is documented for adverse claims about identifiable subjects, including request text, deadline, response or non-response, and draft integration.
+5. Verify GBrain/story record is complete enough for later correction.
+6. Return NOT_READY, RESEARCH_READY, DRAFT_READY, LEGAL_REVIEW_REQUIRED, PUBLICATION_READY, or APPROVED_TO_PUBLISH only if human approval is explicit.
 
 ## GBrain Integration
 
@@ -140,6 +141,7 @@ If GBrain is unavailable, write the same artifacts as Markdown under the story w
 - [ ] GBrain read/write behavior is clear.
 - [ ] Sensitive information is excluded or minimized.
 - [ ] Output can be reviewed by a skeptical editor.
+- [ ] Required pre-publication `Gelegenheit zur Stellungnahme` / right-of-reply outreach is documented or explicitly marked as not required.
 - [ ] No external publication/send/post action is taken without human approval.
 
 ## One-Shot Recipe

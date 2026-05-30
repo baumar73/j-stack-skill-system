@@ -61,7 +61,19 @@ Core law:
 2. Map questions to claims and evidence gaps.
 3. Separate factual confirmation, context, response, and opinion questions.
 4. Prepare fair wording for adverse allegations.
-5. Record responses as source cards and update claim ledger.
+5. For German press-law or analogous fairness contexts, prepare the pre-publication `Gelegenheit zur Stellungnahme` package: concrete allegation list, evidence references, response deadline, recipient/channel, and publication-use note.
+6. Record outreach attempts and responses as source cards, timeline events, and claim-ledger updates.
+
+## Stellungnahme / Right-of-Reply Drafting Rules
+
+When a named or otherwise identifiable subject may be adversely affected:
+
+- Draft questions so the subject can understand the core allegations and meaningfully respond.
+- Ask about the strongest adverse claims, not only soft context questions.
+- Do not disclose unnecessary source identities, confidential material, or unpublished evidence beyond what fairness requires.
+- State the response deadline and intended publication context where appropriate.
+- Track `requested`, `responded`, `declined`, `no response`, or `deadline extended` as explicit statuses.
+- If no request has been sent yet, output a draft only; never contact the subject without explicit human approval.
 
 ## GBrain Integration
 
@@ -139,6 +151,7 @@ If GBrain is unavailable, write the same artifacts as Markdown under the story w
 - [ ] GBrain read/write behavior is clear.
 - [ ] Sensitive information is excluded or minimized.
 - [ ] Output can be reviewed by a skeptical editor.
+- [ ] Right-of-reply / `Gelegenheit zur Stellungnahme` draft includes concrete allegations, response deadline, recipient/channel, and evidence references where appropriate.
 - [ ] No external publication/send/post action is taken without human approval.
 
 ## One-Shot Recipe

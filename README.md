@@ -98,5 +98,6 @@ This is a public MIT-licensed skill package. To install, copy selected `skills/<
 - No real confidential data in tests unless the deployment is approved and documented.
 - No unsupported criminal or misconduct labels.
 - No claim ships above evidence grade.
+- No adverse claim about an identifiable person, company, institution, or group ships without a documented fairness check and, where required, a pre-publication opportunity to comment (`Gelegenheit zur Stellungnahme`).
 - No legal, compliance, security, or professional-certainty claim without independent human review.
 - Human approval remains mandatory for publishing, filings, submissions, external messages, source contact, payments, deployments, legal advice, or other consequential actions.

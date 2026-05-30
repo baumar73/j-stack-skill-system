@@ -70,6 +70,20 @@ J-Stack is designed to use **GBrain** as the newsroom memory and knowledge graph
 14. `jstack-social-package`
 15. `jstack-postpub`
 
+## Runtime and Technical Requirements
+
+J-Stack is a **Hermes Agent skill collection**, not a standalone application. The repository contains Markdown-based `SKILL.md` workflows plus supporting references, templates, bundles, manifests, and validation artifacts. Practical behavior depends on the agent runtime, model quality, local tooling, and the user's own data-governance setup.
+
+### Reference environment for the current public release
+
+- **Agent runtime:** Hermes Agent with `SKILL.md` skill support.
+- **Model / AI environment:** authored and tested in a Linux-based Hermes Agent / Codex-5.5-class coding and reasoning workflow. J-Stack is not hard-bound to one model version, but other runtimes or weaker models may produce different results.
+- **Operating system:** Linux is the tested reference environment. macOS should work for ordinary Markdown skill use. Windows is not the primary tested environment; use WSL/Linux when shell scripts, validation commands, or Git workflows are required.
+- **Knowledge layer:** GBrain is strongly recommended for full newsroom-memory workflows, including source maps, claim ledgers, timelines, entity graphs, corrections, and post-publication memory. Individual skills can still be read and followed manually without GBrain.
+- **Local maintenance tools:** `git`; optionally `python3` for validation scripts, JSON/manifest checks, and repository QA.
+
+J-Stack does **not** provide a hosted model, newsroom CMS, secure confidential-data environment, legal/compliance approval process, source-protection infrastructure, or production deployment. Those technical and organizational controls must be supplied, reviewed, and documented by the user before real-world use.
+
 ## Installation
 
 This is a public MIT-licensed skill package. To install, copy selected `skills/<skill>/` directories into a Hermes skill source or consume the repository through the Hermes skills workflow. Do not install globally into production workflows until reviewed for your use case.

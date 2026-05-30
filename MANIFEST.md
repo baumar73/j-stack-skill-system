@@ -2,7 +2,7 @@
 
 Generated: 2026-05-28T10:30:07+00:00
 
-Status: public MIT skill collection.
+Status: public MIT skill collection with J-Stack v1.1 US-context overlay.
 
 Published: 2026-05-29T11:33:47+00:00.
 
@@ -13,6 +13,7 @@ Last hardened: 2026-05-28T11:08:22+00:00.
 - `VALIDATION.json` — latest deterministic skill validation, 26 skills, 0 errors.
 - `HARDENING-AUDIT.json` — second-pass hardening audit, 0 blockers, 0 important issues, 0 nits.
 - `DISCLAIMER.md` — public disclaimer and use notice for experimental skills, no legal/compliance/security advice, no warranty, human approval, data protection, professional secrecy, AI-governance, and secrets hygiene.
+- `references/us-publication-context.md` — United States publication-safety overlay applied across all 26 skills: federal/state jurisdiction, First Amendment, defamation, privacy torts, anti-SLAPP, source protection, recording/access, copyright/fair use, FTC/platform rules, and local-counsel escalation.
 - `REDTEAM-HARDENING-REPORT.md` — human-readable second-pass review summary.
 - `scripts/validate_jstack.py` — frontmatter/structure validator.
 - `scripts/hardening_audit_jstack.py` — read-only hardening audit script.
@@ -35,7 +36,7 @@ Last hardened: 2026-05-28T11:08:22+00:00.
 - `jstack-entity-graph` (facts-claims): 96/100 — Use when mapping people, organizations, publications, domains, funders, locations, aliases, relationships, and confidence levels in a story or investigation.
 - `jstack-timeline` (facts-claims): 96/100 — Use when reconstructing dated events, statements, filings, publications, decisions, denials, corrections, and consequences so a story does not imply false sequence or causality.
 - `jstack-countercase` (facts-claims): 97/100 — Use when building the best opposing case against a story, thesis, allegation, or draft before publication, including innocent explanations and subject-side arguments.
-- `jstack-legal-risk` (safety): 96/100 — Use for a pre-publication legal-risk screen of journalism or public commentary, including defamation/libel, German Verdachtsberichterstattung, privacy, copyright, data protection, and active litigation risks.
+- `jstack-legal-risk` (safety): 96/100 — Use for a pre-publication legal-risk screen of journalism or public commentary, including defamation/libel, German Verdachtsberichterstattung, US First Amendment/defamation/privacy/anti-SLAPP/fair-use/source-protection posture, copyright, data protection, and active litigation risks.
 - `jstack-ethics-check` (safety): 95/100 — Use when reviewing fairness, public interest, harm, vulnerable people, source protection, conflicts, framing, privacy, and correction duties before publication.
 - `jstack-draft` (writing): 96/100 — Use when drafting news, analysis, opinion, investigation, feature, briefing, LinkedIn, X thread, or longform text from a prepared mission brief and claim ledger.
 - `jstack-copy-desk` (writing): 95/100 — Use when tightening, restructuring, headline-testing, style-checking, and copyediting a draft without changing the evidence level or editorial mission.

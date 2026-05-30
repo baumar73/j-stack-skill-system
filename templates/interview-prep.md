@@ -12,4 +12,7 @@
 - Recipient / channel:
 - Fair response deadline:
 - Outreach status: draft only / sent / responded / declined / no response / deadline extended
+- US context label: US_CONTEXT_NOT_REQUIRED / US_CONTEXT_APPLIES / US_STATE_LAW_UNCLEAR / US_LOCAL_COUNSEL_REQUIRED
+- US request-for-comment framing: fairness practice / defamation-risk mitigation / public-record clarification / no outreach for safety/legal reason
+- US recording consent / source-protection note:
 - Source-protection notes:

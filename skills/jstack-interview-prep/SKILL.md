@@ -1,7 +1,7 @@
 ---
 name: jstack-interview-prep
 description: Use when preparing interviews, requests for comment, expert calls, hostile-subject questions, source briefings, or right-of-reply outreach drafts.
-version: 1.0.0
+version: 1.1.0
 author: J-Stack project for Hermes Agent
 license: MIT
 metadata:
@@ -21,6 +21,14 @@ J-Stack treats journalism as a transparent production system: a story moves from
 Core law:
 
 > No public claim ships above its evidence grade. Strong opinion is allowed; weak factual basis is not.
+
+## US Edition v1.1 — Jurisdiction Overlay
+
+When the publication, audience, platform, source, or subject has a United States nexus, apply `references/us-publication-context.md` before final status. Do not transplant German/EU press-law assumptions into US work. At minimum, identify the relevant state(s), federal forum, publication venue, subject status, public-record posture, and platform context.
+
+Track US-specific risks where relevant: First Amendment/public-concern framing, public official/public figure/private figure status, actual malice/negligence, fact vs opinion, fair-report/public-record privileges, anti-SLAPP and retraction statutes, privacy torts, reporter shield/source protection, recording/access/CFAA issues, copyright/fair use/DMCA, FTC/native-ad disclosures, election/securities sensitivities, and platform rules.
+
+Treat request-for-comment as a US fairness and risk-mitigation practice, not as a single nationwide statutory right of reply. If state law, subpoena/source protection, privacy, defamation, copyright, or platform exposure is material and unresolved, mark `US_LOCAL_COUNSEL_REQUIRED`, `LEGAL_REVIEW_REQUIRED`, or `NOT_READY` rather than `PUBLICATION_READY`.
 
 ## When to Use
 
@@ -62,7 +70,8 @@ Core law:
 3. Separate factual confirmation, context, response, and opinion questions.
 4. Prepare fair wording for adverse allegations.
 5. For German press-law or analogous fairness contexts, prepare the pre-publication `Gelegenheit zur Stellungnahme` package: concrete allegation list, evidence references, response deadline, recipient/channel, and publication-use note.
-6. Record outreach attempts and responses as source cards, timeline events, and claim-ledger updates.
+6. For US contexts, prepare request-for-comment as a fairness and defamation-risk-mitigation package, not as a universal statutory right of reply; document state/jurisdiction uncertainty, subject status, recording-consent/source-protection issues, and whether outreach is withheld for safety or legal reasons.
+7. Document outreach attempts and responses as source cards, timeline events, and claim-ledger updates.
 
 ## Stellungnahme / Right-of-Reply Drafting Rules
 
@@ -152,6 +161,7 @@ If GBrain is unavailable, write the same artifacts as Markdown under the story w
 - [ ] Sensitive information is excluded or minimized.
 - [ ] Output can be reviewed by a skeptical editor.
 - [ ] Right-of-reply / `Gelegenheit zur Stellungnahme` draft includes concrete allegations, response deadline, recipient/channel, and evidence references where appropriate.
+- [ ] US context is classified as `US_CONTEXT_NOT_REQUIRED` or reviewed under `references/us-publication-context.md`.
 - [ ] No external publication/send/post action is taken without human approval.
 
 ## One-Shot Recipe

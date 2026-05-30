@@ -11,7 +11,7 @@ J-Stack is a modular newsroom operating system for Hermes skills. Each skill rep
 1. **Mission layer** — define public interest, audience, artifact type, editorial line, falsification standard.
 2. **Research layer** — source map, primary sources, OSINT, data, interviews, documents.
 3. **Evidence layer** — claim ledger, evidence ledger, entity graph, timeline, countercase.
-4. **Safety layer** — legal risk, ethics, red-team, ship gate.
+4. **Safety layer** — legal risk, ethics, red-team, ship gate, including German opportunity-to-comment and US federal/state publication-context overlays.
 5. **Production layer** — drafting, copy desk, SEO, social package.
 6. **Memory layer** — GBrain import, links, tags, timeline, post-publication updates.
 
@@ -61,6 +61,8 @@ Recommended page namespaces:
 - `CLAIMS_READY`
 - `DRAFT_READY`
 - `LEGAL_REVIEW_REQUIRED`
+- `US_LOCAL_COUNSEL_REQUIRED`
+- `US_STATE_LAW_UNCLEAR`
 - `REDTEAM_BLOCKED`
 - `PUBLICATION_READY`
 - `APPROVED_TO_PUBLISH`

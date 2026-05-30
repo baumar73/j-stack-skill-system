@@ -1,7 +1,7 @@
 ---
 name: jstack-osint-research
 description: Use when conducting lawful open-source research across public websites, social profiles, domains, corporate pages, media archives, map traces, public videos, and metadata visible to ordinary users.
-version: 1.0.0
+version: 1.1.0
 author: J-Stack project for Hermes Agent
 license: MIT
 metadata:
@@ -21,6 +21,14 @@ J-Stack treats journalism as a transparent production system: a story moves from
 Core law:
 
 > No public claim ships above its evidence grade. Strong opinion is allowed; weak factual basis is not.
+
+## US Edition v1.1 — Jurisdiction Overlay
+
+When the publication, audience, platform, source, or subject has a United States nexus, apply `references/us-publication-context.md` before final status. Do not transplant German/EU press-law assumptions into US work. At minimum, identify the relevant state(s), federal forum, publication venue, subject status, public-record posture, and platform context.
+
+Track US-specific risks where relevant: First Amendment/public-concern framing, public official/public figure/private figure status, actual malice/negligence, fact vs opinion, fair-report/public-record privileges, anti-SLAPP and retraction statutes, privacy torts, reporter shield/source protection, recording/access/CFAA issues, copyright/fair use/DMCA, FTC/native-ad disclosures, election/securities sensitivities, and platform rules.
+
+Treat request-for-comment as a US fairness and risk-mitigation practice, not as a single nationwide statutory right of reply. If state law, subpoena/source protection, privacy, defamation, copyright, or platform exposure is material and unresolved, mark `US_LOCAL_COUNSEL_REQUIRED`, `LEGAL_REVIEW_REQUIRED`, or `NOT_READY` rather than `PUBLICATION_READY`.
 
 ## When to Use
 
@@ -137,6 +145,7 @@ If GBrain is unavailable, write the same artifacts as Markdown under the story w
 - [ ] GBrain read/write behavior is clear.
 - [ ] Sensitive information is excluded or minimized.
 - [ ] Output can be reviewed by a skeptical editor.
+- [ ] US context is classified as `US_CONTEXT_NOT_REQUIRED` or reviewed under `references/us-publication-context.md`.
 - [ ] No external publication/send/post action is taken without human approval.
 
 ## One-Shot Recipe

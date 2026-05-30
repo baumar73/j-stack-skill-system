@@ -1,7 +1,7 @@
 ---
 name: jstack-ship
 description: Use as the final publication gate for J-Stack work. Verifies mission, sources, claims, countercase, legal/ethics, red-team fixes, headlines, social snippets, GBrain record, and human approval.
-version: 1.0.0
+version: 1.1.0
 author: J-Stack project for Hermes Agent
 license: MIT
 metadata:
@@ -21,6 +21,14 @@ J-Stack treats journalism as a transparent production system: a story moves from
 Core law:
 
 > No public claim ships above its evidence grade. Strong opinion is allowed; weak factual basis is not.
+
+## US Edition v1.1 — Jurisdiction Overlay
+
+When the publication, audience, platform, source, or subject has a United States nexus, apply `references/us-publication-context.md` before final status. Do not transplant German/EU press-law assumptions into US work. At minimum, identify the relevant state(s), federal forum, publication venue, subject status, public-record posture, and platform context.
+
+Track US-specific risks where relevant: First Amendment/public-concern framing, public official/public figure/private figure status, actual malice/negligence, fact vs opinion, fair-report/public-record privileges, anti-SLAPP and retraction statutes, privacy torts, reporter shield/source protection, recording/access/CFAA issues, copyright/fair use/DMCA, FTC/native-ad disclosures, election/securities sensitivities, and platform rules.
+
+Treat request-for-comment as a US fairness and risk-mitigation practice, not as a single nationwide statutory right of reply. If state law, subpoena/source protection, privacy, defamation, copyright, or platform exposure is material and unresolved, mark `US_LOCAL_COUNSEL_REQUIRED`, `LEGAL_REVIEW_REQUIRED`, or `NOT_READY` rather than `PUBLICATION_READY`.
 
 ## When to Use
 
@@ -60,8 +68,9 @@ Core law:
 2. Verify every factual claim has evidence grade and safe wording.
 3. Verify countercase, legal risk, ethics, red-team, headline, and social snippets.
 4. Verify required `Gelegenheit zur Stellungnahme` / right-of-reply outreach is documented for adverse claims about identifiable subjects, including request text, deadline, response or non-response, and draft integration.
-5. Verify GBrain/story record is complete enough for later correction.
-6. Return NOT_READY, RESEARCH_READY, DRAFT_READY, LEGAL_REVIEW_REQUIRED, PUBLICATION_READY, or APPROVED_TO_PUBLISH only if human approval is explicit.
+5. Verify US context is classified as not applicable or resolved under `references/us-publication-context.md`; unresolved state-law, First Amendment/defamation, privacy, source-protection, recording/access, fair-use, FTC/platform, election/securities, or local-counsel issues block green status.
+6. Verify GBrain/story record is complete enough for later correction.
+7. Return NOT_READY, RESEARCH_READY, DRAFT_READY, LEGAL_REVIEW_REQUIRED, PUBLICATION_READY, or APPROVED_TO_PUBLISH only if human approval is explicit.
 
 ## GBrain Integration
 
@@ -142,6 +151,7 @@ If GBrain is unavailable, write the same artifacts as Markdown under the story w
 - [ ] Sensitive information is excluded or minimized.
 - [ ] Output can be reviewed by a skeptical editor.
 - [ ] Required pre-publication `Gelegenheit zur Stellungnahme` / right-of-reply outreach is documented or explicitly marked as not required.
+- [ ] US context is classified as `US_CONTEXT_NOT_REQUIRED` or reviewed under `references/us-publication-context.md`.
 - [ ] No external publication/send/post action is taken without human approval.
 
 ## One-Shot Recipe

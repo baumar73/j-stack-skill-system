@@ -15,7 +15,7 @@ Store:
 - story mission briefs;
 - entity pages when public-interest justified;
 - timeline events;
-- risk registers with minimized sensitive detail;
+- risk registers with minimized sensitive detail, including jurisdiction labels and US context labels where relevant;
 - publication and correction decisions.
 
 Do not store:
@@ -65,6 +65,7 @@ Sections:
 - Safe wording.
 - Unsafe wording.
 - Legal/ethics flags.
+- US context labels: `US_CONTEXT_NOT_REQUIRED`, `US_CONTEXT_APPLIES`, `US_STATE_LAW_UNCLEAR`, or `US_LOCAL_COUNSEL_REQUIRED`.
 
 ## Source Card Schema
 

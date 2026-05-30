@@ -1,7 +1,7 @@
 ---
 name: jstack-legal-risk
-description: Use for a pre-publication legal-risk screen of journalism or public commentary, including defamation/libel, German Verdachtsberichterstattung, privacy, copyright, data protection, and active litigation risks.
-version: 1.0.0
+description: Use for a pre-publication legal-risk screen of journalism or public commentary, including defamation/libel, German Verdachtsberichterstattung, US First Amendment/defamation/privacy/anti-SLAPP/fair-use/source-protection posture, copyright, data protection, and active litigation risks.
+version: 1.1.0
 author: J-Stack project for Hermes Agent
 license: MIT
 metadata:
@@ -21,6 +21,14 @@ J-Stack treats journalism as a transparent production system: a story moves from
 Core law:
 
 > No public claim ships above its evidence grade. Strong opinion is allowed; weak factual basis is not.
+
+## US Edition v1.1 — Jurisdiction Overlay
+
+When the publication, audience, platform, source, or subject has a United States nexus, apply `references/us-publication-context.md` before final status. Do not transplant German/EU press-law assumptions into US work. At minimum, identify the relevant state(s), federal forum, publication venue, subject status, public-record posture, and platform context.
+
+Track US-specific risks where relevant: First Amendment/public-concern framing, public official/public figure/private figure status, actual malice/negligence, fact vs opinion, fair-report/public-record privileges, anti-SLAPP and retraction statutes, privacy torts, reporter shield/source protection, recording/access/CFAA issues, copyright/fair use/DMCA, FTC/native-ad disclosures, election/securities sensitivities, and platform rules.
+
+Treat request-for-comment as a US fairness and risk-mitigation practice, not as a single nationwide statutory right of reply. If state law, subpoena/source protection, privacy, defamation, copyright, or platform exposure is material and unresolved, mark `US_LOCAL_COUNSEL_REQUIRED`, `LEGAL_REVIEW_REQUIRED`, or `NOT_READY` rather than `PUBLICATION_READY`.
 
 ## When to Use
 
@@ -51,6 +59,7 @@ Core law:
 - Legal Risk Register
 - Required fixes
 - Right-of-reply / Gelegenheit zur Stellungnahme needs
+- US context labels and local-counsel escalation
 - Legal-review flag
 - Safe wording options
 
@@ -60,7 +69,8 @@ Core law:
 2. Map each risk to claim IDs and wording.
 3. Flag unsupported allegations of crime, corruption, agency, espionage, sanctions evasion, money laundering, sexual misconduct, or intentional deceit.
 4. For adverse claims about identifiable people, companies, institutions, or groups, require a documented pre-publication opportunity to comment before ship status can be green.
-5. Return ship status: no-ship, legal-review-required, publish-after-fixes, or legally lower-risk.
+5. If US context applies, run the `references/us-publication-context.md` matrix: federal/state forum, First Amendment status, subject status, fault standard, public-record/fair-report posture, anti-SLAPP/retraction, privacy torts, source protection, recording/access, copyright/fair use, FTC/platform, and local-counsel needs.
+6. Return ship status: no-ship, legal-review-required, publish-after-fixes, or legally lower-risk.
 
 ## German Press-Law Gate: Gelegenheit zur Stellungnahme
 
@@ -151,6 +161,7 @@ If GBrain is unavailable, write the same artifacts as Markdown under the story w
 - [ ] Sensitive information is excluded or minimized.
 - [ ] Output can be reviewed by a skeptical editor.
 - [ ] Required pre-publication `Gelegenheit zur Stellungnahme` / right-of-reply outreach is identified, drafted, or explicitly marked as not required.
+- [ ] US context is classified as `US_CONTEXT_NOT_REQUIRED` or reviewed under `references/us-publication-context.md`.
 - [ ] No external publication/send/post action is taken without human approval.
 
 ## One-Shot Recipe

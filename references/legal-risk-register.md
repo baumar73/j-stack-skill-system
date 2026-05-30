@@ -2,8 +2,12 @@
 
 - Claim ID:
 - Draft section/headline/social snippet:
-- Risk type: defamation/libel, Verdachtsberichterstattung, privacy, copyright, data protection, active litigation, platform policy, other.
+- Risk type: defamation/libel, Verdachtsberichterstattung, US First Amendment/defamation/privacy/anti-SLAPP/fair-use/source-protection, privacy, copyright, data protection, active litigation, platform policy, other.
 - Jurisdiction:
+- US context label: US_CONTEXT_NOT_REQUIRED / US_CONTEXT_APPLIES / US_STATE_LAW_UNCLEAR / US_LOCAL_COUNSEL_REQUIRED
+- US state(s) / federal forum / likely plaintiff forum:
+- US subject status: public official / public figure / limited-purpose public figure / private figure / corporation / government body / group / unclear
+- US issue flags: actual malice / negligence / fact vs opinion / fair report / anti-SLAPP / retraction / privacy tort / recording-access / source protection / fair use / FTC-platform / other
 - Evidence grade:
 - Risk level: low / medium / high / no-ship.
 - Required fix:
@@ -12,6 +16,7 @@
 - Request text / allegation summary:
 - Deadline / channel / recipient:
 - Response status and draft integration:
+- US request-for-comment status: not needed / draft only / sent / responded / declined / no response / deadline extended
 - Legal review needed:
 - Safe wording:
 - Unsafe wording:

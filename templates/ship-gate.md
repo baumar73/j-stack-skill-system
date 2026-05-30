@@ -6,6 +6,10 @@
 - Source map complete:
 - Claim ledger complete:
 - Legal risks resolved:
+- German opportunity-to-comment / right-of-reply status:
+- US Context Label: US_CONTEXT_NOT_REQUIRED / US_CONTEXT_APPLIES / US_STATE_LAW_UNCLEAR / US_LOCAL_COUNSEL_REQUIRED
+- US Review Resolved: First Amendment / defamation / privacy tort / anti-SLAPP / source protection / recording-access / copyright-fair-use / FTC-platform
+- US Local Counsel Needed:
 - Ethics risks resolved:
 - Red-team blockers resolved:
 - Headline safe:

@@ -2,7 +2,8 @@
   "name": "j-stack-skill-system",
   "display_name": "J-Stack",
   "generated_at": "2026-05-28T10:30:07+00:00",
-  "status": "published-public-mit",
+  "status": "published-public-mit-us-v1.1",
+  "us_context_overlay": "references/us-publication-context.md",
   "inspiration": "Garry Tan / GStack-style operational skills; no affiliation or endorsement implied.",
   "gbrain": "Designed to use GBrain as newsroom memory, source graph, claim ledger, timeline, and publication record.",
   "skills": [
@@ -123,7 +124,7 @@
       "family": "safety",
       "score": 96,
       "path": "skills/jstack-legal-risk/SKILL.md",
-      "description": "Use for a pre-publication legal-risk screen of journalism or public commentary, including defamation/libel, German Verdachtsberichterstattung, privacy, copyright, data protection, and active litigation risks."
+      "description": "Use for a pre-publication legal-risk screen of journalism or public commentary, including defamation/libel, German Verdachtsberichterstattung, US First Amendment/defamation/privacy/anti-SLAPP/fair-use/source-protection posture, copyright, data protection, and active litigation risks."
     },
     {
       "name": "jstack-ethics-check",
@@ -196,6 +197,7 @@
     "GBRAIN-INTEGRATION.md",
     "QUALITY-GATES.md",
     "PUBLICATION-READINESS.md",
+    "references/us-publication-context.md",
     "MANIFEST.md",
     "MANIFEST.json",
     "LICENSE",

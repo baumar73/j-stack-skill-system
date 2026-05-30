@@ -1,6 +1,6 @@
 # J-Stack — GBrain-Integrated Journalism Skills for Hermes Agent
 
-Status: **published public MIT skill collection**; not automatically installed into any active Hermes profile.  
+Status: **published public MIT skill collection** with J-Stack v1.1 US-context overlay; not automatically installed into any active Hermes profile.
 Generated: 2026-05-28T10:30:07+00:00  
 Published: 2026-05-29T11:33:47+00:00  
 Owner: Markus Bauer / J-Stack contributors
@@ -12,7 +12,7 @@ J-Stack is an **experimental open-source skill collection and workflow library**
 
 Use J-Stack at your own responsibility. The repository and its authors make **no warranty** as to correctness, completeness, timeliness, security, suitability for a particular purpose, legal effect, or production readiness. LLM and agent outputs can be wrong, incomplete, outdated, or hallucinated.
 
-Before using J-Stack with real client, legal, business, personal, confidential, journalistic-source, or otherwise regulated data, you must assess your own deployment, provider, hosting, logging, retention, data transfer, professional secrecy, data protection, AI-governance, editorial, and security obligations. This repository makes **no statement** that any concrete use complies with professional secrecy, confidentiality, GDPR/BDSG, the EU AI Act, Cloud Act/FISA exposure, privilege or seizure protections, employment or works-council rules, platform rules, press law, defamation law, copyright, or any other applicable law.
+Before using J-Stack with real client, legal, business, personal, confidential, journalistic-source, or otherwise regulated data, you must assess your own deployment, provider, hosting, logging, retention, data transfer, professional secrecy, data protection, AI-governance, editorial, and security obligations. This repository makes **no statement** that any concrete use complies with professional secrecy, confidentiality, GDPR/BDSG, the EU AI Act, Cloud Act/FISA exposure, US federal or state law, First Amendment / defamation / privacy / anti-SLAPP / fair-use / source-protection rules, privilege or seizure protections, employment or works-council rules, platform rules, press law, defamation law, copyright, or any other applicable law.
 
 Do not test with real confidential data unless your environment is approved and documented. Keep secrets, tokens, API keys, credentials, and provider logs out of the repository and issue reports. Verify all citations, statutes, deadlines, calculations, source references, factual claims, and external actions independently. Human approval remains mandatory for publishing, filings, submissions, external messages, source contact, payments, deployments, legal advice, or other consequential actions.
 
@@ -43,6 +43,14 @@ J-Stack is designed to use **GBrain** as the newsroom memory and knowledge graph
 > No public claim ships above its evidence grade.  
 > Strong opinion is allowed; weak factual basis is not.
 
+## J-Stack v1.1 — US Publication Context Overlay
+
+The second public version adds a United States context layer across all 26 skills. Use [`references/us-publication-context.md`](./references/us-publication-context.md) whenever the publication, source, subject, audience, platform, author, evidence, or likely dispute forum has a US nexus.
+
+The US layer is broader than a German `Gelegenheit zur Stellungnahme` gate. It forces the workflow to classify federal/state jurisdiction, First Amendment posture, public official/public figure/private figure status, actual-malice or negligence issues, fact-vs-opinion boundaries, public-record/fair-report posture, anti-SLAPP and retraction questions, privacy torts, source-protection and recording/access rules, copyright/fair-use/DMCA, FTC/platform disclosures, election/securities sensitivities, and local-counsel needs.
+
+J-Stack does **not** claim US legal compliance. The overlay is a safety checklist that prevents German/EU assumptions from being treated as sufficient for US publication risk.
+
 ## Skill Families
 
 - Editorial command: command center, office hours, editorial line, assignment desk.
@@ -70,14 +78,14 @@ J-Stack is designed to use **GBrain** as the newsroom memory and knowledge graph
 14. `jstack-social-package`
 15. `jstack-postpub`
 
-## Runtime and Technical Requirements
+## Tested Environment and Technical Requirements
 
 J-Stack is a **Hermes Agent skill collection**, not a standalone application. The repository contains Markdown-based `SKILL.md` workflows plus supporting references, templates, bundles, manifests, and validation artifacts. Practical behavior depends on the agent runtime, model quality, local tooling, and the user's own data-governance setup.
 
 ### Reference environment for the current public release
 
 - **Agent runtime:** Hermes Agent with `SKILL.md` skill support.
-- **Model / AI environment:** authored and tested in a Linux-based Hermes Agent / Codex-5.5-class coding and reasoning workflow. J-Stack is not hard-bound to one model version, but other runtimes or weaker models may produce different results.
+- **Reference model / AI stack:** authored and tested in a Linux-based Hermes Agent / Codex-5.5-class coding and reasoning workflow. J-Stack is not hard-bound to one model version, but other runtimes or weaker models may produce different results.
 - **Operating system:** Linux is the tested reference environment. macOS should work for ordinary Markdown skill use. Windows is not the primary tested environment; use WSL/Linux when shell scripts, validation commands, or Git workflows are required.
 - **Knowledge layer:** GBrain is strongly recommended for full newsroom-memory workflows, including source maps, claim ledgers, timelines, entity graphs, corrections, and post-publication memory. Individual skills can still be read and followed manually without GBrain.
 - **Local maintenance tools:** `git`; optionally `python3` for validation scripts, JSON/manifest checks, and repository QA.
@@ -99,5 +107,6 @@ This is a public MIT-licensed skill package. To install, copy selected `skills/<
 - No unsupported criminal or misconduct labels.
 - No claim ships above evidence grade.
 - No adverse claim about an identifiable person, company, institution, or group ships without a documented fairness check and, where required, a pre-publication opportunity to comment (`Gelegenheit zur Stellungnahme`).
+- No US-nexus story ships unless US context is classified as not required or reviewed under `references/us-publication-context.md`, with unresolved state-law or local-counsel issues escalated instead of hidden.
 - No legal, compliance, security, or professional-certainty claim without independent human review.
 - Human approval remains mandatory for publishing, filings, submissions, external messages, source contact, payments, deployments, legal advice, or other consequential actions.

@@ -20,6 +20,7 @@ In particular, J-Stack makes **no statement** that a concrete use complies with:
 - attorney-client privilege, journalistic privilege, source protection, or seizure protections;
 - data-protection law such as GDPR, BDSG, or comparable regimes;
 - the EU AI Act or other AI-governance regimes;
+- US federal, state, or local law, including First Amendment, defamation/libel, privacy tort, anti-SLAPP, retraction, reporter shield/source-protection, recording/wiretap/access, copyright/fair-use/DMCA, FTC, election, securities, or platform-governance rules;
 - press law, defamation/libel law, privacy law, copyright law, platform rules, or court-reporting restrictions;
 - employment, works-council, whistleblower, or newsroom-governance obligations;
 - any sector-specific regulation that may apply to the user, subject, data, or publication.
@@ -33,6 +34,8 @@ J-Stack does not decide whether a deployment is compatible with professional sec
 For German legal or professional contexts, this includes — without limitation — questions under §§ 203, 204 StGB, § 43e BRAO, § 2 BORA, § 53 StPO, § 97 StPO, § 160a StPO and parallel rules for tax advisers, auditors, notaries, patent attorneys, doctors, journalists, and other confidentiality-bound professions.
 
 For journalism and public-interest work, this also includes source protection, whistleblower safety, data minimization, secure communication, and safe handling of unpublished material.
+
+For United States contexts, source-protection and reporter-privilege rules are uneven and often state-specific. J-Stack does not determine whether a source, reporter, publisher, or unpublished record is protected against subpoena, discovery, seizure, platform request, or other compulsory process.
 
 ## 4. Data protection, hosting, and provider responsibility
 

@@ -34,8 +34,8 @@ This package is a public MIT-licensed GBrain-integrated journalism skill collect
 - Decide whether to install selected skills into an active Hermes profile.
 - Human legal review before branding the legal-risk material as suitable for public professional use, especially for US state-specific publication, source-protection, anti-SLAPP, privacy, copyright/fair-use, and platform-policy questions.
 - Human compliance/security review before using J-Stack with real confidential, source-sensitive, client, personal, or regulated data.
-- Optional: add real worked examples from a non-sensitive public story.
+- Optional: add real worked examples from a non-sensitive public story; both previously lowest helper skills (`jstack-data-journalism` and `jstack-seo-distribution`) now have fictional non-sensitive worked examples.
 
 ## Recommendation
 
-Proceed to human editorial/legal review before treating the legal-risk material as professional advice, add optional worked examples for the two 94/100 helper skills, or tag a GitHub release. Do not install into an active Hermes profile until Markus explicitly approves.
+Proceed to human editorial/legal review before treating the legal-risk material as professional advice, tag a GitHub release if desired, or add real-world non-sensitive worked examples later. Do not install into an active Hermes profile until Markus explicitly approves.

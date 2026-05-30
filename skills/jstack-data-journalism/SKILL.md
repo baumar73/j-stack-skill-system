@@ -158,6 +158,16 @@ If GBrain is unavailable, write the same artifacts as Markdown under the story w
 - [ ] US context is classified as `US_CONTEXT_NOT_REQUIRED` or reviewed under `references/us-publication-context.md`.
 - [ ] No external publication/send/post action is taken without human approval.
 
+## Worked Example
+
+For a concrete non-sensitive demonstration, see `examples/jstack-data-journalism/`:
+
+- `README.md` explains the fictional story question and reproduction command.
+- `sample-public-service-hours.csv` is a tiny fictional dataset with no personal or real-world data.
+- `worked-example.md` shows the full data note, data dictionary, reproducible calculation, findings table, limitations, safe claim wording, and next J-Stack routing.
+
+Use this example as the minimum standard for real data work: every numeric claim needs provenance, denominator, method, limitation, and claim-ledger-safe wording.
+
 ## One-Shot Recipe
 
 ```text

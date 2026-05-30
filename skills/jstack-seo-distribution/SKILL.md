@@ -158,6 +158,21 @@ If GBrain is unavailable, write the same artifacts as Markdown under the story w
 - [ ] US context is classified as `US_CONTEXT_NOT_REQUIRED` or reviewed under `references/us-publication-context.md`.
 - [ ] No external publication/send/post action is taken without human approval.
 
+## Worked Example
+
+A non-sensitive worked example lives at `examples/jstack-seo-distribution/`.
+
+Use it as the minimum pattern for distribution work:
+
+- start from a claim-bounded story brief;
+- map reader intent without changing the underlying claim;
+- produce title, meta description, slug, landing-page outline, and newsletter teaser;
+- run a headline-vs-evidence check on each compressed surface;
+- keep unsafe clickbait terms out of metadata;
+- require human approval before posting, sending, or publishing.
+
+The example includes `metadata-length-check.py` to verify title/meta/slug length and reject sensational terms in the fictional package.
+
 ## One-Shot Recipe
 
 ```text

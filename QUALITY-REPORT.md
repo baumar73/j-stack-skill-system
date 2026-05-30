@@ -12,10 +12,10 @@ Generated: 2026-05-28T11:04:20+00:00
 ## Score Summary
 
 - Skill count: **26**
-- Average score: **95.9/100**
+- Average score: **96.0/100**
 - Median score: **96.0/100**
 - Highest score: **98/100**
-- Lowest score: **94/100**
+- Lowest score: **95/100**
 - Core target: **95+** for central editorial/research/safety skills.
 - Helper threshold: **90+** for distribution/data helper skills.
 
@@ -23,8 +23,8 @@ Generated: 2026-05-28T11:04:20+00:00
 
 ### distribution
 
-- Count: 2; average: 94.5/100; range: 94–95
-- `jstack-seo-distribution`: **94/100**
+- Count: 2; average: 95.0/100; range: 95–95
+- `jstack-seo-distribution`: **95/100** — includes a non-sensitive worked example with a fictional story brief, search-intent map, metadata, newsletter copy, review gates, and metadata length/safety script.
 - `jstack-social-package`: **95/100**
 
 ### editorial-command
@@ -56,8 +56,8 @@ Generated: 2026-05-28T11:04:20+00:00
 
 ### research
 
-- Count: 7; average: 95.4/100; range: 94–97
-- `jstack-data-journalism`: **94/100**
+- Count: 7; average: 95.6/100; range: 95–97
+- `jstack-data-journalism`: **95/100** — includes a non-sensitive worked example with a fictional dataset, reproducible calculation, limitations, and safe claim wording.
 - `jstack-document-review`: **95/100**
 - `jstack-interview-prep`: **95/100**
 - `jstack-investigate`: **97/100**
@@ -81,7 +81,7 @@ Generated: 2026-05-28T11:04:20+00:00
 
 ## Notes
 
-All central skills meet the 95+ target except deliberately technical/helper-adjacent `jstack-data-journalism` and `jstack-seo-distribution`, which are currently **94/100** because they should receive real worked examples and optional scripts before a v1.0 public release. They remain above the 90+ helper threshold.
+All skills now meet the 95+ target. `jstack-data-journalism` was raised to **95/100** by adding a non-sensitive fictional dataset and full worked example. `jstack-seo-distribution` was raised to **95/100** by adding a non-sensitive fictional SEO/distribution worked example with metadata checks and review gates.
 
 ## Score Basis
 

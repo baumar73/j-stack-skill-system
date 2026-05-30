@@ -59,9 +59,9 @@
     {
       "name": "jstack-data-journalism",
       "family": "research",
-      "score": 94,
+      "score": 95,
       "path": "skills/jstack-data-journalism/SKILL.md",
-      "description": "Use when a story relies on datasets, tables, statistics, scraping outputs, budgets, filings, measurements, or repeatable quantitative analysis."
+      "description": "Use when a story relies on datasets, tables, statistics, scraping outputs, budgets, filings, measurements, or repeatable quantitative analysis. Includes a non-sensitive worked example with a fictional dataset, reproducible calculation, limitations, and safe claim wording."
     },
     {
       "name": "jstack-interview-prep",
@@ -150,9 +150,9 @@
     {
       "name": "jstack-seo-distribution",
       "family": "distribution",
-      "score": 94,
+      "score": 95,
       "path": "skills/jstack-seo-distribution/SKILL.md",
-      "description": "Use when turning a publishable story into search-intent, metadata, landing-page, newsletter, and audience-development material without overstating claims."
+      "description": "Use when turning a publishable story into search-intent, metadata, landing-page, newsletter, and audience-development material without overstating claims. Includes a non-sensitive worked example with a fictional story brief, search-intent map, metadata, newsletter copy, review gates, and metadata length/safety script."
     },
     {
       "name": "jstack-social-package",
